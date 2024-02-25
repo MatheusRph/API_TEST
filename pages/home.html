@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <img id='logo' src="img/logo.png" alt="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="#">Sla</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container-grid">
+        <div class="title grid">
+            <h1>Um site de previsões climáticas</h1>    
+            <p id="description">Este é um site criado para atividade escolar, feito por: <br>Matheus Rodolpho de Almeida</p>
+        </div>
+        <div class="info grid">
+            <div class="red info-grid">
+                <img id="chuva" src="./img/chuva.png" alt="CHUVA">
+                <span id="temperature" class='span'>Test</span>
+            </div>
+            <div class="green info-grid">a</div>
+            <div class="white info-grid">a</div>
+        </div>
+        <div class="buttonClima grid">
+            <input type="text" id="pesquisa" placeholder="Search..." onkeydown="pesquisa_cidade(event)">
+        </div>
+    </div>
+    <!-- Corrigindo o caminho do arquivo JavaScript -->
+    <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
+</body>
+</html>

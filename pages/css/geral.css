@@ -1,0 +1,84 @@
+/* Define a fonte padrão para o documento HTML */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Reseta as margens padrão do corpo e define a imagem de fundo */
+body {
+    margin: 0;
+    background-image: url('../img/background.jpg');
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o corpo */
+}
+
+/* Define o contêiner principal para limitar a largura máxima */
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: relative;
+    top: 0;
+    height: 100px; /* Define a altura do cabeçalho */
+    width: 100%;
+}
+
+/* Estilo da barra de navegação */
+nav {
+    position: fixed; /* Fixa a barra de navegação no topo da janela */
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+/* Limpa o conteúdo flutuante dentro da barra de navegação */
+nav::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* Estilo do contêiner da barra de navegação */
+.nav-container {
+    max-width: 1200px; /* Define a largura máxima da barra de navegação */
+    position: relative;
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+/* Estilo do logotipo */
+#logo {
+    width: 6.5vh;
+    height: 6.5vh;
+    margin-top: 17px; /* Alinha o logotipo verticalmente com a barra de navegação */
+}
+
+/* Estilo da lista de itens de navegação */
+.nav-container ul {
+    float: right; /* Alinha os itens de navegação à direita */
+    height: 5vw; /* Define a altura da barra de navegação */
+    line-height: 10vh; /* Alinha o texto verticalmente com a altura da barra de navegação */
+    margin: 0;
+}
+
+/* Estilo dos itens de navegação */
+.nav-container li {
+    list-style-type: none; /* Remove os marcadores de lista */
+    float: left; /* Alinha os itens de navegação lado a lado */
+    margin: 0 15px; /* Adiciona espaçamento entre os itens de navegação */
+}
+
+/* Estilo dos links de navegação */
+.nav-container li a {
+    text-decoration: none; /* Remove a decoração de texto padrão */
+    color: white; /* Define a cor do texto */
+    transition: .3s; /* Adiciona uma transição suave ao passar o mouse sobre os links */
+}
+
+/* Estilo dos links de navegação ao passar o mouse sobre eles */
+.nav-container li a:hover {
+    color: wheat; /* Altera a cor do texto ao passar o mouse */
+}
+

@@ -1,0 +1,93 @@
+.container-grid {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin-left: 5%; /* Ajuste a margem conforme necessário */
+    margin-top: 3vh; /* Ajuste a margem conforme necessário */
+
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 60% 30%;
+    gap: 4%; /* Ajuste o espaçamento conforme necessário */
+}
+
+.grid {
+    width: 85%;
+    height: 100%;
+}
+
+.title {
+    /* display: flex; */ /* Remova esta linha */
+    font-size: 4vh; 
+    color: black;
+    font-family: "Roboto";
+    margin-top: 10%;
+}
+
+.info {
+    background-color: whitesmoke;
+    width: 50vh; /* Ajuste a largura conforme necessário */
+    height: 65vh; /* Ajuste a altura conforme necessário */
+    display: grid;
+    margin-left: 10%;
+    margin-top: 10%;
+    grid-template-columns: 90%;
+    grid-template-rows: 23% 35% 35%;
+    -webkit-border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.white{
+    background-color: wheat;
+}
+
+.info-grid{
+    margin-left: 10%;
+}
+
+#pesquisa {
+    padding-left: 2vh; /* Adiciona espaçamento à esquerda do texto */
+    font-size: 1.2vw; /* Ajuste o tamanho da fonte conforme necessário */
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 5vh; /* Ajuste a altura conforme necessário */
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+}
+
+#chuva {
+    margin-top: 3vh; /* Ajuste a margem conforme necessário */
+    width: 10vh; /* Ajuste a largura conforme necessário */
+    height: 10vh; /* Ajuste a altura conforme necessário */
+}
+
+#temperature{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -20%;
+    margin-left: 85%;
+    font-size: 4vh;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#C{
+    display: flex;
+    margin-top: -18%;
+    font-size: 2vh;
+    font-family: "Roboto";
+
+}
+
+#description {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 2vh;
+    border-left: 0.3vh groove black;
+    padding-left: 1.5vh;
+    height: 8vh;
+    font-size: 2.5vh;
+    margin-top: -2vh;
+}
