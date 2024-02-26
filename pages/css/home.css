@@ -1,12 +1,12 @@
 .container-grid {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    margin-left: 5%; /* Ajuste a margem conforme necessário */
-    margin-top: 3vh; /* Ajuste a margem conforme necessário */
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 3vh;
 
     display: grid;
     grid-template-columns: 60% 30%;
     grid-template-rows: 60% 30%;
-    gap: 4%; /* Ajuste o espaçamento conforme necessário */
+    gap: 4%;
 }
 
 .grid {
@@ -15,7 +15,6 @@
 }
 
 .title {
-    /* display: flex; */ /* Remova esta linha */
     font-size: 4vh; 
     color: black;
     font-family: "Roboto";
@@ -24,60 +23,80 @@
 
 .info {
     background-color: whitesmoke;
-    width: 50vh; /* Ajuste a largura conforme necessário */
-    height: 70vh; /* Ajuste a altura conforme necessário */
+    width: 60vh;
+    height: 70vh;
     display: grid;
     margin-left: 10%;
     margin-top: 10%;
     grid-template-columns: 100%;
     grid-template-rows: 23% 35% 35%;
-    -webkit-border-radius: 10px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
+    
 }
 
-.white{
+.white {
     background-color: wheat;
 }
 
-.info-grid{
+.info-grid {
     margin-left: 10%;
+    position: relative; /* Adiciona position: relative para o contêiner pai */
 }
 
 #pesquisa {
-    padding-left: 2vh; /* Adiciona espaçamento à esquerda do texto */
-    font-size: 1.2vw; /* Ajuste o tamanho da fonte conforme necessário */
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 5vh; /* Ajuste a altura conforme necessário */
+    padding-left: 2vh;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 5vh;
     border: 0.3vh solid white;
     border-radius: 1vh;
 }
 
 #chuva {
-    margin-top: 3vh; /* Ajuste a margem conforme necessário */
-    width: 10vh; /* Ajuste a largura conforme necessário */
-    height: 10vh; /* Ajuste a altura conforme necessário */
+    margin-top: 3vh;
+    width: 10vh;
+    height: 10vh;
     margin-left: -5%;
 }
 
-#temperature{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: -27%;
-    margin-left: 65%;
-    font-size: 4vh;
+#temperature {
+    position: absolute;
+    color: #00003e;
+    top: 15%;
+    right: 15%;
+    transform: translateY(-50%);
+    font-size: 6vh;
     font-family: "Gothic A1", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-#C{
-    display: flex;
-    margin-right: 4%;
-    margin-top: -20%;
-    font-size: 2vh;
+#city {
+    position: absolute;
+    top: -5%;
+    left: 16%;
+    font-size: 4vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#weather {
+    position: absolute;
+    top: 33%;
+    left: 16%;
+    font-size: 3vh;
+    font-weight: 400;
+    color: rgba(43, 43, 43, 0.853);
+}
+
+#C {
+    position: absolute;
+    top: 27%;
+    right: 12%;
+    font-size: 2.5vh;
+    font-weight: 600;
     font-family: "Roboto";
 }
 
@@ -93,17 +112,7 @@
     margin-top: -2vh;
 }
 
-#city{
-    width:  50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: -8%;
-    margin-left: 25%;
-    font-size: 3.9vh;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-style: normal;
-    border-bottom: 2px groove rgba(34, 34, 34, 0.267);
+#border{
+    width: 90%;
+    border-bottom: 2px solid rgba(48, 48, 48, 0.648);
 }
-

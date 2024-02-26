@@ -13,7 +13,7 @@ function pesquisa_cidade(event) {
             })
             .then(data => {
                 document.getElementById('city').innerHTML = meuValor;
-                document.getElementById('temperature').innerHTML = data.Temperatura + "<sub id=\"C\">C</sub>";
+                document.getElementById('temperature').innerHTML = parseInt(data.Temperatura);
                 // document.getElementById('humidity').textContent = data.Umidade;
                 // document.getElementById('windSpeed').textContent = data.VelocidadeDoVento;
                 document.getElementById('weather').textContent = data.Clima;
