@@ -64,17 +64,17 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: -20%;
+    margin-top: -24%;
     margin-left: 85%;
     font-size: 4vh;
     font-family: "Gothic A1", sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
 }
 
 #C{
     display: flex;
-    margin-top: -18%;
+    margin-top: -22%;
     font-size: 2vh;
     font-family: "Roboto";
 
@@ -90,4 +90,17 @@
     height: 8vh;
     font-size: 2.5vh;
     margin-top: -2vh;
+}
+
+#city{
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    display: flex;
+    margin-top: -8%;
+    margin-left: 3%;
+    font-size: 3.9vh;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
 }
