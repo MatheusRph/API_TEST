@@ -12,7 +12,6 @@ function pesquisa_cidade(event) {
                 throw new Error('Erro ao buscar dados climáticos: ' + response.status);
             })
             .then(data => {
-                console.log(meuValor)
                 document.getElementById('temperature').innerHTML = data.Temperatura + "<sub id=\"C\">C</sub>";
                 // document.getElementById('humidity').textContent = data.Umidade;
                 // document.getElementById('windSpeed').textContent = data.VelocidadeDoVento;
