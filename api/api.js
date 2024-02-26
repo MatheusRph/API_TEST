@@ -17,8 +17,48 @@ const API_KEY = config.API_KEY;
 
 // Tradução dos tipos de clima
 const traducaoClima = {
-    "few clouds": "Poucas Nuvens"
+    "few clouds": "Poucas Nuvens",
+    "overcast clouds": "Tempo nublado",
+    "light rain": "Chuva leve",
+    "moderate rain": "Chuva moderada",
+    "haze": "Nevoeiro",
+    // Aqui adicionamos outras traduções com base na API
+    "broken clouds": "Nuvens Quebradas",
+    "scattered clouds": "Nuvens Esparsas",
+    "clear sky": "Céu Limpo",
+    "mist": "Nevoeiro",
+    "fog": "Nevoeiro",
+    "light intensity drizzle": "Chuvisco de Baixa Intensidade",
+    "drizzle": "Chuvisco",
+    "heavy intensity drizzle": "Chuvisco de Alta Intensidade",
+    "light intensity shower rain": "Chuva Fraca",
+    "shower rain": "Chuva",
+    "heavy intensity rain": "Chuva Forte",
+    "very heavy rain": "Chuva Muito Forte",
+    "extreme rain": "Chuva Extrema",
+    "freezing rain": "Chuva Congelante",
+    "light snow": "Neve Fraca",
+    "snow": "Neve",
+    "heavy snow": "Neve Forte",
+    "sleet": "Aguaneve",
+    "shower sleet": "Aguaceiro com Neve",
+    "light rain and snow": "Chuva e Neve Fraca",
+    "rain and snow": "Chuva e Neve",
+    "light shower snow": "Neve Fraca",
+    "shower snow": "Neve",
+    "heavy shower snow": "Neve Forte",
+    "thunderstorm with light rain": "Tempestade com Chuva Fraca",
+    "thunderstorm with rain": "Tempestade com Chuva",
+    "thunderstorm with heavy rain": "Tempestade com Chuva Forte",
+    "light thunderstorm": "Trovoada Fraca",
+    "thunderstorm": "Trovoada",
+    "heavy thunderstorm": "Trovoada Forte",
+    "ragged thunderstorm": "Trovoada Irregular",
+    "thunderstorm with light drizzle": "Trovoada com Chuvisco Fraco",
+    "thunderstorm with drizzle": "Trovoada com Chuvisco",
+    "thunderstorm with heavy drizzle": "Trovoada com Chuvisco Forte"
 };
+
 
 // Rota para obter dados climáticos
 router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get' em vez de 'api.get'
