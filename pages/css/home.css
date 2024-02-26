@@ -29,7 +29,7 @@
     display: grid;
     margin-left: 10%;
     margin-top: 10%;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     grid-template-rows: 23% 35% 35%;
     -webkit-border-radius: 10px;
     -webkit-border-radius: 20px;
@@ -58,14 +58,15 @@
     margin-top: 3vh; /* Ajuste a margem conforme necessário */
     width: 10vh; /* Ajuste a largura conforme necessário */
     height: 10vh; /* Ajuste a altura conforme necessário */
+    margin-left: -5%;
 }
 
 #temperature{
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: -24%;
-    margin-left: 85%;
+    margin-top: -27%;
+    margin-left: 65%;
     font-size: 4vh;
     font-family: "Gothic A1", sans-serif;
     font-weight: 700;
@@ -74,10 +75,10 @@
 
 #C{
     display: flex;
-    margin-top: -22%;
+    margin-right: 4%;
+    margin-top: -20%;
     font-size: 2vh;
     font-family: "Roboto";
-
 }
 
 #description {
@@ -93,14 +94,16 @@
 }
 
 #city{
+    width:  50%;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
     display: flex;
     margin-top: -8%;
-    margin-left: 3%;
+    margin-left: 25%;
     font-size: 3.9vh;
     font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
+    border-bottom: 2px groove rgba(34, 34, 34, 0.267);
 }
+

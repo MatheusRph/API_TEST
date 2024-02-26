@@ -12,10 +12,11 @@ function pesquisa_cidade(event) {
                 throw new Error('Erro ao buscar dados climáticos: ' + response.status);
             })
             .then(data => {
+                document.getElementById('city').innerHTML = meuValor;
                 document.getElementById('temperature').innerHTML = data.Temperatura + "<sub id=\"C\">C</sub>";
                 // document.getElementById('humidity').textContent = data.Umidade;
                 // document.getElementById('windSpeed').textContent = data.VelocidadeDoVento;
-                // document.getElementById('weather').textContent = data.Clima;
+                document.getElementById('weather').textContent = data.Clima;
             })
             .catch(error => {
                 document.getElementById('temperature').textContent = 'Não foi possível obter os dados';
