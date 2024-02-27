@@ -7,7 +7,6 @@ function req (city){
         throw new Error('Erro ao buscar dados climáticos: ' + response.status);
     })
     .then(data => {
-        hideLoading();
         document.getElementById('city').textContent = data.Nome;
         document.getElementById('C').innerHTML = 'C';
         document.getElementById('temperature').innerHTML = parseInt(data.Temperatura);
@@ -34,8 +33,9 @@ function req (city){
             document.getElementById('chuva').src = "img/clima/tempestade.gif";
         } else {
             // Se não houver correspondência, defina uma imagem padrão
-            document.getElementById('chuva').src = "img/clima/imagem_padrao.jpg";
-        }                
+            document.getElementById('chuva').src = "img/clima/sol.jpg";
+        }      
+        setTimeout(hideLoading, 2100);          
     })
     .catch(error => {
         hideLoading();
