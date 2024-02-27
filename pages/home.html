@@ -34,13 +34,23 @@
         <div class="info grid">
             <div class="red info-grid">
                 <img id="chuva" src="" alt="">
-                <h2 id="temperature"></h2>
-                <p id="city"></p>
+                <p id="city">a</p>
+                <div id="temperatureInfo">
+                    <img src="./img/temperature.png" alt="Temometro" id="temometro">
+                    <h2 id="temperature"></h2>
+                    <sub id="C"></sub>
+                </div>
                 <p id="weather"></p>
-                <sub id="C"></sub>
                 <div id = "border"></div>
             </div>
-            <div class="green info-grid">a</div>
+            <div class="green info-grid">
+                <img id="humidityPng" src="./img/humidity.png">
+                <div id="humiditygrid"> 
+                    <p id="humidityTxt">Humidade</p>
+                    <p id="humidity"></p>  
+                </div>
+
+            </div>
             <div class="white info-grid">a</div>
         </div>
         <div class="buttonClima grid">
@@ -51,5 +61,6 @@
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
     <script type="text/javascript" src="./script/refresh.js"></script>
     <script type="text/javascript" src="./script/loading.js"></script>
+    <script type="text/javascript" src="./script/req.js"></script>
 </body>
 </html>

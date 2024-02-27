@@ -60,6 +60,7 @@ const traducaoClima = {
 };
 
 
+
 // Rota para obter dados climáticos
 router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get' em vez de 'api.get'
     const city = req.params.cidade;
@@ -75,10 +76,11 @@ router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get'
             
             // Dados do clima a serem enviados como resposta
             const weatherData = {
+                Nome: response.data.name,
                 Temperatura: response.data.main.temp,
                 Umidade: response.data.main.humidity,
                 VelocidadeDoVento: response.data.wind.speed,
-                Clima: clima
+                Clima: clima,
             };
 
             // Envio da resposta com os dados do clima

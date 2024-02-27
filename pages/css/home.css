@@ -59,16 +59,33 @@
     margin-left: -5%;
 }
 
+#temometro{
+    position: absolute;
+    margin-top: -18%;
+    margin-left: 83%;
+    width: 7vh;
+    height: 7vh;;
+}
+
 #temperature {
     position: absolute;
     color: #00003e;
     top: 15%;
-    right: 15%;
+    right: 16%;
     transform: translateY(-50%);
     font-size: 6vh;
     font-family: "Gothic A1", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+#C {
+    position: absolute;
+    top: 27%;
+    right: 13%;
+    font-size: 2.5vh;
+    font-weight: 600;
+    font-family: "Gothic A1";
 }
 
 #city {
@@ -82,6 +99,8 @@
     font-style: normal;
 }
 
+
+
 #weather {
     position: absolute;
     top: 33%;
@@ -89,15 +108,6 @@
     font-size: 3vh;
     font-weight: 400;
     color: rgba(43, 43, 43, 0.853);
-}
-
-#C {
-    position: absolute;
-    top: 27%;
-    right: 12%;
-    font-size: 2.5vh;
-    font-weight: 600;
-    font-family: "Roboto";
 }
 
 #description {
@@ -116,3 +126,52 @@
     width: 90%;
     border-bottom: 2px solid rgba(48, 48, 48, 0.648);
 }
+
+#humidityPng {
+    width: 8vh;
+    height: 8vh;
+    margin-left: -3%;
+}
+
+ #humidityTxt {
+    /* position: absolute;
+    top: -7%;
+    left: 13%; */
+    font-size: 2.5vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* #humidity {
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    font-size: 2.9vh;
+    font-family: "Rubik", sans-serif;
+    color: rgba(63, 63, 63, 0.974);
+    font-weight: 470;
+    font-style: normal;
+} */
+
+
+#humiditygrid{
+    position: absolute;
+    /* background-color: aqua; */
+    width: 30%;
+    margin-top: -19%;
+    margin-left: 12%;
+}
+
+#humidity {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    font-size: 2.3vh;
+    font-family: "Rubik", sans-serif;
+    color: rgba(63, 63, 63, 0.974);
+    font-weight: 470;
+    font-style: normal;
+    margin-top: -17%;
+} 
