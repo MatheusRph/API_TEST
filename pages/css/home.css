@@ -175,3 +175,26 @@
     font-style: normal;
     margin-top: -17%;
 } 
+
+#windSpeedPng{
+    position: absolute;
+    width: 7.5vh;
+    height: 7.5vh;
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+#windSpeedGrid{
+    position: absolute;
+    width: 50%;
+    margin-top: -19%;
+    margin-left: 53%;
+}
+
+#windSpeedTxt{
+    font-size: 2.5vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+}

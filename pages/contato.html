@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/geral.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="./img/logo.png" />
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
                 <div class="nav-container">
-                    <img id='logo' src="img/logo.png" alt="logo">
+                    <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="./contato.html">Contato</a></li>
@@ -29,12 +33,24 @@
         </div>
         <div class="info grid">
             <div class="red info-grid">
-                <img id="chuva" src="./img/chuva.png" alt="CHUVA">
-                <p id="temperature">12</p>
-                <p id="city">Pompeia</p>
-                <p id="weather">broken clouds</p>
+                <img id="chuva" src="" alt="">
+                <p id="city">a</p>
+                <div id="temperatureInfo">
+                    <img src="./img/temperature.png" alt="Temometro" id="temometro" >
+                    <h2 id="temperature"></h2>
+                    <sub id="C"></sub>
+                </div>
+                <p id="weather"></p>
+                <div id = "border"></div>
             </div>
-            <div class="green info-grid">a</div>
+            <div class="green info-grid">
+                <img id="humidityPng" src="./img/humidity.png">
+                <div id="humiditygrid"> 
+                    <p id="humidityTxt">Humidade</p>
+                    <p id="humidity"></p>  
+                </div>
+
+            </div>
             <div class="white info-grid">a</div>
         </div>
         <div class="buttonClima grid">
@@ -43,5 +59,8 @@
     </div>
     <!-- Corrigindo o caminho do arquivo JavaScript -->
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
+    <script type="text/javascript" src="./script/refresh.js"></script>
+    <script type="text/javascript" src="./script/loading.js"></script>
+    <script type="text/javascript" src="./script/req.js"></script>
 </body>
 </html>
