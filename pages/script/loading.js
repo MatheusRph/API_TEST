@@ -22,5 +22,5 @@ function hideLoading(){
 // Ouve o evento 'load' no objeto window para esconder o elemento de carregamento quando a página terminar de carregar completamente
 window.addEventListener('load', function() {
     // Define um tempo mínimo de 4 segundos antes de ocultar o elemento de carregamento
-    setTimeout(hideLoading, 1500);
+    setTimeout(hideLoading, 3000);
 });
