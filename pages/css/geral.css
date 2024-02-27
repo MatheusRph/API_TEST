@@ -8,7 +8,39 @@ body {
     margin: 0;
     background-image: url('../img/background.jpg');
     background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o corpo */
+    width: 100%;
+    min-height: 100vh;
+}   
+
+.loading {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Defina um valor maior para o elemento de carregamento */
 }
+
+.loading img {
+    width: 10vh;
+    height: 10vh;
+    
+    /* animation: loading 2s linear infinite; */
+}
+
+/* @keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+} */
 
 /* Define o contêiner principal para limitar a largura máxima */
 .container {
@@ -30,7 +62,7 @@ nav {
     top: 0;
     height: 70px;
     width: 100%;
-    z-index: 1; /* Define a ordem de empilhamento */
+    z-index: 2; /* Define a ordem de empilhamento */
 }
 
 /* Limpa o conteúdo flutuante dentro da barra de navegação */
@@ -53,6 +85,7 @@ nav::after {
     width: 6.5vh;
     height: 6.5vh;
     margin-top: 17px; /* Alinha o logotipo verticalmente com a barra de navegação */
+    z-index: 1;
 }
 
 /* Estilo da lista de itens de navegação */
@@ -80,21 +113,4 @@ nav::after {
 /* Estilo dos links de navegação ao passar o mouse sobre eles */
 .nav-container li a:hover {
     color: wheat; /* Altera a cor do texto ao passar o mouse */
-}
-
-#loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white; /* Cor de fundo opcional */
-    z-index: 9999; /* Para garantir que esteja na parte superior */
-}
-
-#loading img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
