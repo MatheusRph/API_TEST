@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/geral.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="icon" 
-      type="image/jpg" 
-      href="./img/logo.png" />
+    <link rel="icon" type="image/jpg" href="./img/logo.png" />
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -18,7 +19,7 @@
                 <div class="nav-container">
                     <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        
                         <li><a href="./contato.html">Contato</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -28,34 +29,46 @@
     </div>
     <div class="container-grid">
         <div class="title grid">
-            <h1>Um site de previsões climáticas</h1>    
-            <p id="description">Este é um site criado para atividade escolar, feito por: <br>Matheus Rodolpho de Almeida</p>
+            <h1>Um site de previsões climáticas</h1>
+            <p id="description">Este é um site criado para atividade escolar, feito por: <br>Matheus Rodolpho de Almeida
+            </p>
         </div>
         <div class="info grid">
             <div class="red info-grid">
                 <img id="chuva" src="" alt="">
                 <p id="city">a</p>
                 <div id="temperatureInfo">
-                    <img src="./img/temperature.png" alt="Temometro" id="temometro" >
+                    <img src="./img/temperature.png" alt="Temometro" id="temometro">
                     <h2 id="temperature"></h2>
                     <sub id="C"></sub>
                 </div>
                 <p id="weather"></p>
-                <div id = "border"></div>
+                <div id="border"></div>
             </div>
-            <div class="green info-grid">
+            <div class="infoAdd info-grid">
                 <img id="humidityPng" src="./img/humidity.png">
-                <div id="humiditygrid"> 
+                <div id="humiditygrid">
                     <p id="humidityTxt">Umidade</p>
-                    <p id="humidity"></p>  
+                    <p id="humidity"></p>
                 </div>
                 <img src="./img/teste/wind (1).png" alt="WIND" id="windSpeedPng">
                 <div id="windSpeedGrid">
-                    <p id="windSpeedTxt">Velocidade do vento</p>
-                    <p id="windSpeed">30km</p>
+                    <p id="windSpeedTxt">Vento</p>
+                    <p id="windSpeed"></p>
                 </div>
+                <div id="borderInfo2"></div>
             </div>
-            <div class="white info-grid">a</div>
+            <div class="mapGrid info-grid">
+                <div id="map">
+                    <p id="mapTxt">Mapa Climático</p>
+                    <iframe id="mapLink" src="https://www.meteoblue.com/en/weather/maps/widget/basel_switzerland_2661604?
+                windAnimation=0&amp;windAnimation=1&amp;gust=0&amp;gust=1&amp;satellite=0&amp;satellite=1&amp;
+                cloudsAndPrecipitation=0&amp;cloudsAndPrecipitation=1&amp;temperature=0&amp;temperature=1&amp;
+                sunshine=0&amp;sunshine=1&amp;extremeForecastIndex=0&amp;extremeForecastIndex=1&amp;geoloc=fixed&amp;
+                tempunit=C&amp;windunit=km%252Fh&amp;lengthunit=metric&amp;zoom=5&amp;autowidth=auto"></iframe>
+                </div>
+                <div id="mapborder"></div>
+            </div>
         </div>
         <div class="buttonClima grid">
             <input type="text" id="pesquisa" placeholder="Search..." onkeydown="pesquisa_cidade(event)">
@@ -67,4 +80,5 @@
     <script type="text/javascript" src="./script/loading.js"></script>
     <script type="text/javascript" src="./script/req.js"></script>
 </body>
+
 </html>

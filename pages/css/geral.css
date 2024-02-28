@@ -9,7 +9,7 @@ body {
     background-image: url('../img/background.jpg');
     background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o corpo */
     width: 100%;
-    min-height: 100vh;
+    min-height: 100;
 }   
 
 .loading {

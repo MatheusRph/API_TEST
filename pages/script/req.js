@@ -11,10 +11,9 @@ function req (city){
         document.getElementById('C').innerHTML = 'C';
         document.getElementById('temperature').innerHTML = parseInt(data.Temperatura);
         document.getElementById('humidity').textContent = data.Umidade + '%';
-        // document.getElementById('windSpeed').textContent = data.VelocidadeDoVento;
+        document.getElementById('windSpeed').textContent = data.VelocidadeDoVento + 'km/h';
         document.getElementById('weather').textContent = data.Clima;
-
-
+        
         if (data.Clima === "Tempo nublado") {
             document.getElementById('chuva').src = "img/clima/nublado.gif";
         } else if (data.Clima === "Poucas Nuvens" || data.Clima === "Nuvens Quebradas" || data.Clima === "Nuvens Esparsas") {

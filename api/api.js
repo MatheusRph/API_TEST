@@ -76,6 +76,9 @@ router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get'
             
             // Dados do clima a serem enviados como resposta
             const weatherData = {
+                alt: response.data.coord.alt,
+                lon: response.data.coord.lon,
+                lat: response.data.coord.lat,
                 Nome: response.data.name,
                 Temperatura: response.data.main.temp,
                 Umidade: response.data.main.humidity,

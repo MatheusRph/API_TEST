@@ -1,7 +1,7 @@
 .container-grid {
     width: 80%;
     margin-left: 5%;
-    margin-top: 3vh;
+    margin-top: 2vh;
 
     display: grid;
     grid-template-columns: 60% 30%;
@@ -16,7 +16,7 @@
 
 .title {
     font-size: 4vh; 
-    color: black;
+    color: #00003e;
     font-family: "Roboto";
     margin-top: 10%;
 }
@@ -29,13 +29,9 @@
     margin-left: 10%;
     margin-top: 10%;
     grid-template-columns: 100%;
-    grid-template-rows: 23% 35% 35%;
-    border-radius: 20px;
+    grid-template-rows: 23% 35% 40%;
+    border-radius: 13px;
     
-}
-
-.white {
-    background-color: wheat;
 }
 
 .info-grid {
@@ -49,7 +45,7 @@
     width: 100%;
     height: 5vh;
     border: 0.3vh solid white;
-    border-radius: 1vh;
+    border-radius: 0.8vh;
 }
 
 #chuva {
@@ -176,19 +172,26 @@
     margin-top: -17%;
 } 
 
+#borderInfo2{
+    margin-top: 3%;
+    width: 90%;
+    border-bottom: 2px solid rgba(48, 48, 48, 0.648);
+    position: absolute;
+}
+
 #windSpeedPng{
     position: absolute;
     width: 7.5vh;
     height: 7.5vh;
     margin-top: 1%;
-    margin-left: 25%;
+    margin-left: 35%;
 }
 
 #windSpeedGrid{
     position: absolute;
     width: 50%;
     margin-top: -19%;
-    margin-left: 53%;
+    margin-left: 65%;
 }
 
 #windSpeedTxt{
@@ -197,4 +200,50 @@
     color: #00003e;
     font-weight: 600;
     font-style: normal;
+}
+
+#windSpeed{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.8%;
+    font-size: 2.3vh;
+    font-family: "Rubik", sans-serif;
+    color: rgba(63, 63, 63, 0.974);
+    font-weight: 470;
+    font-style: normal;
+    margin-top: -10%;
+}   
+
+.mapGrid {
+    margin-top: -20%;
+    right: 10%;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    height: 100%; /* Ocupa toda a altura do contêiner pai */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 80%; /* Ocupa toda a largura do contêiner pai */
+    height: 80%; /* Ocupa toda a altura do contêiner pai */
+}
+
+#map iframe{
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    height: 140%; /* Ocupa toda a altura do contêiner pai */
+    border-radius: 2vh;
+    border: 0.35vh solid #00003e;
+    margin-top: -2%;
+}
+
+#mapTxt{
+    display: flex;
+    font-size: 3vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -6%;
+    justify-content: center;
 }
