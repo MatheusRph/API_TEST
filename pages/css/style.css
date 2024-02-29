@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+}
+
+#barra-pesquisa{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 38%;
+    height: 5vh;
+}
+
+#barra-pesquisa input{
+    margin-left: 5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    color: rgb(88, 88, 88);
+    border: 2px solid #00003e;;
+    padding-left: 10%;
+    border-radius: 10vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lupa {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+
+.prev-grid {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Ajuste para que os itens sejam empilhados verticalmente */
+    background-color: wheat;
+    width: 65vh;
+    height: 35vh;
+    margin: 7%;
+    margin-left: 5%;
+}
+
+.info,
+.infoAdd {
+    flex: 1; /* Cada item ocupará uma coluna e se expandirá para preencher o espaço disponível */
+}
+
+.info {
+    background-color: aqua;
+}
+
+.infoAdd {
+    background-color: red;
+}

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clima</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="./css/geral.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="icon" 
-      type="image/jpg" 
-      href="./img/logo.png" />
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -18,7 +16,7 @@
                 <div class="nav-container">
                     <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
                     <ul>
-                        <li><a href="#">Home</a></li>
+
                         <li><a href="./contato.html">Contato</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -26,41 +24,21 @@
             </nav>
         </header>
     </div>
-    <div class="container-grid">
-        <div class="title grid">
-            <h1>Um site de previsões climáticas</h1>    
-            <p id="description">Este é um site criado para atividade escolar, feito por: <br>Matheus Rodolpho de Almeida</p>
-        </div>
-        <div class="info grid">
-            <div class="red info-grid">
-                <img id="chuva" src="" alt="">
-                <p id="city">a</p>
-                <div id="temperatureInfo">
-                    <img src="./img/temperature.png" alt="Temometro" id="temometro" >
-                    <h2 id="temperature"></h2>
-                    <sub id="C"></sub>
-                </div>
-                <p id="weather"></p>
-                <div id = "border"></div>
-            </div>
-            <div class="green info-grid">
-                <img id="humidityPng" src="./img/humidity.png">
-                <div id="humiditygrid"> 
-                    <p id="humidityTxt">Humidade</p>
-                    <p id="humidity"></p>  
-                </div>
 
-            </div>
-            <div class="white info-grid">a</div>
-        </div>
-        <div class="buttonClima grid">
-            <input type="text" id="pesquisa" placeholder="Search..." onkeydown="pesquisa_cidade(event)">
+    <div id="barra-pesquisa">
+        <input type="text" name="" id="" placeholder="Pesquisar cidade..."></input>
+        <img src="img/lupa.png" alt="Lupa" class="lupa">
+    </div>
+
+    <div class="corpo">
+        <!---Gird - Tamanho Tela Branca do layout-->
+        <div class="prev-grid">
+            <div class="info"></div>
+            <div class="infoAdd"></div>
         </div>
     </div>
-    <!-- Corrigindo o caminho do arquivo JavaScript -->
-    <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
-    <script type="text/javascript" src="./script/refresh.js"></script>
-    <script type="text/javascript" src="./script/loading.js"></script>
-    <script type="text/javascript" src="./script/req.js"></script>
+
+
 </body>
+
 </html>
