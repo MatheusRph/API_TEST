@@ -1,61 +1,149 @@
-.container {
-    position: relative;
-}
-
-#barra-pesquisa{
+.prev-grid {
     position: absolute;
     display: flex;
     align-items: center;
-    width: 38%;
-    height: 5vh;
-}
-
-#barra-pesquisa input{
-    margin-left: 5%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 5vh;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
-    color: rgb(88, 88, 88);
-    border: 2px solid #00003e;;
-    padding-left: 10%;
-    border-radius: 10vh;
-    font-size: 2vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70vh;
+    height: 50vh;
+    margin: -1%;
+    margin-left: 5%;
+    border-radius: 2vh;
+    opacity: 0.85; /* Ajustando a opacidade para 85% */
 }
 
-.lupa {
-    position: absolute;
+.barra-pesquisa {
     display: flex;
     align-items: center;
-    padding-left: 8%;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.barra-pesquisa input {
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    width: calc(75% - 10%); /* Ajustando a largura do input */
+    height: 4vh;
+    border: 0.5vh solid black;
+    border-radius: 3vh;
+    background-color: black;
+    opacity: 0.7; /* Ajustando a opacidade para 70% */
+    padding-left: 10%;
+    margin-left: 0;
+}
+
+.barra-pesquisa input::placeholder {
+    text-align: start;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+#lupa {
+    position: absolute;
+    margin-right: 68%;
     width: 3.5vh;
     height: 3.5vh;
 }
 
-
-.prev-grid {
-    position: absolute;
-    display: flex;
-    flex-direction: column; /* Ajuste para que os itens sejam empilhados verticalmente */
-    background-color: wheat;
-    width: 65vh;
-    height: 35vh;
-    margin: 7%;
-    margin-left: 5%;
-}
-
 .info,
 .infoAdd {
-    flex: 1; /* Cada item ocupará uma coluna e se expandirá para preencher o espaço disponível */
+    border-radius: 3.2vh;
+    flex: 1;
 }
 
 .info {
-    background-color: aqua;
+    width: 80%;
+    height: 10%;
+    margin-bottom: 3%;
+    margin-top: -6%;
+}
+
+.infoLogoPos {
+    position: absolute;
+    width: 12.5vh;
+    height: 12.5vh;
+}
+
+.infoCitPos {
+    position: relative;
+    display: flex;
+    width: 78%;
+    height: 0%;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.5vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#statsClima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1%;
+    margin-left: 2.3%;
+    font-size: 3vh;
+    font-weight: 400;
+    color: rgba(43, 43, 43, 0.853);
+}
+
+.fontTemp, .C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 16%;
+    top: 10%;
+    width: fit-content;
+    color: #00003e;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    font-size: 7vh;
+}
+
+.celsius {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    right: +21%;
+    top: 16%;
+    margin-right: -8%;
+    font-weight: 700;
+    font-size: 3vh;
+    font-family: "Gothic A1";
+}
+
+#pngTemp{
+    position: absolute;
+    width: 11%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 20%;   
+    right: 5%;
+}
+
+/* <p> $ahsgyasya <sub>C</sub> </> */
+.divisor {
+    border: 5px solid rgba(48, 48, 48, 0.648);
+    border-radius: 30px;
+    margin: 5%;
+    margin-top: 3%;
+    width: 75%;
 }
 
 .infoAdd {
-    background-color: red;
+    border: 0.5vh solid #00003e;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 3%;
 }
