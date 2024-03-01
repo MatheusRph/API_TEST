@@ -15,6 +15,7 @@ server.use(express.json());
 server.use(express.static(path.join(__dirname, 'pages')));
 
 // Rota para exibir o arquivo HTML
+
 server.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/pages/home.html'), (err) => {
         if (err) {
@@ -23,10 +24,8 @@ server.get('/', (req, res) => {
     });
 });
 
-server.use("/contato", require('./api/api.js')); // Corrigido para usar '/api' como prefixo para as rotas da API
-
-server.get('/contato', (req, res) => {
-    res.sendFile(path.join(__dirname, '/pages/contato.html'), (err) => {
+server.get('/prev', (req, res) => {
+    res.sendFile(path.join(__dirname, '/pages/prev.html'), (err) => {
         if (err) {
             res.status(500).send("Erro ao enviar o arquivo HTML");
         }
