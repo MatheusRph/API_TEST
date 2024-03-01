@@ -181,7 +181,17 @@
 }
 
 #umidadeTxt{
-    font-size: 4vh;
+    font-size: 3.2vh;
     display: flex;
+    color: #00003e;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    flex-direction: column;
 }
 
+.umidadeInfo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
