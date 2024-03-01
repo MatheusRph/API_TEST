@@ -114,7 +114,7 @@
 }
 
 .fontTemp{
-    margin-top: 33%;
+    margin-top: 35%;
     position: relative;
     display: flex;
     width: fit-content;
@@ -136,13 +136,15 @@
    
 }
 
-#pngTemp{
-    position: relative;
-    width: 50%;
-    height: 50%;
+.pngTemp{
+    position: absolute;
+    right: -60%;
+    margin-top: 0%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 3.5vw;
+    height: 3.5vw;
 }
 
 /* <p> $ahsgyasya <sub>C</sub> </> */
