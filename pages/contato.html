@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/geral.css" />
 </head>
 
 <body>
@@ -14,9 +14,8 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
+                    <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo" /></a>
                     <ul>
-
                         <li><a href="./contato.html">Contato</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -34,23 +33,27 @@
         <!---Gird - Tamanho Tela Branca do layout-->
         <div class="prev-grid">
             <div class="barra-pesquisa">
-                <input type="text" placeholder="Pesquisar...">
-                <img src="img/lupa.png" alt="LUPA" id="lupa">
+                <input type="text" placeholder="Pesquisar..." />
+                <img src="img/lupa.png" alt="LUPA" id="lupa" />
             </div>
             <div class="info">
-                <img src="img/clima/sol.gif" alt="SOL.PNG" class="infoLogoPos">
-                <p class="infoCitPos">Marília</p>
-                <p class="infoCitPos" id="statsClima">Tempo nublado</p>
-                    <p class="fontTemp">32</p>
-                    <p class="celsius"><sup>C</sup></p>
-                    <img id="pngTemp" src="img/temperature.png" alt="">
+                <img src="img/clima/sol.gif" alt="SOL.PNG" class="infoLogoPos" />
+                
+                <div class="infoCityWeather">
+                    <p class="infoCitPos">aparecida de goiania</p>
+                    <p class="infoCitPos statsClima">Tempo nublado</p>
+                    
+                    <!-- <img id="pngTemp" src="img/temperature.png" alt="" /> -->
+                </div>
+
+                <div class="temperaturePos">
+                    <p class="fontTemp">32<sup class="celsius">C</sup></p>
+                </div>
             </div>
             <div class="divisor"></div>
             <div class="infoAdd"></div>
         </div>
     </div>
-
-
 </body>
 
 </html>
