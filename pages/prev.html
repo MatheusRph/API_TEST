@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="./css/geral.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/jpg" href="./img/logo.png" />
 </head>
 
 <body>
@@ -14,50 +17,29 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo" /></a>
+                    <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
                     <ul>
+                        
                         <li><a href="./prev">Previsões</a></li>
-                        <li><a href="#">Créditos</a></li>
+                        <li><a href="#">Sla</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
     </div>
-
-    <div class="corpo">
-        <!---Gird - Tamanho Tela Branca do layout-->
-        <div class="prev-grid">
-            <div class="barra-pesquisa">
-                <input type="text" placeholder="Pesquisar..." />
-                <img src="img/lupa.png" alt="LUPA" id="lupa" />
-            </div>
-            <div class="info">
-                <img src="img/clima/sol.gif" alt="SOL.PNG" class="infoLogoPos" />
-
-                <div class="infoCityWeather">
-                    <p class="infoCitPos">Rio de Janeiro</p>
-                    <p class="infoCitPos statsClima">Tempo nublado</p>
-
-                    <!-- <img id="pngTemp" src="img/temperature.png" alt="" /> -->
-                </div>
-
-                <div class="temperaturePos">
-                    <p class="fontTemp">32<sup class="celsius">C</sup>
-                        <sub><img src="img/temperature.png" alt="" class="pngTemp"></sub>
-                    </p>
-                </div>
-            </div>
-            <div class="divisor"></div>
-            <div class="infoAdd">
-                <img src="img/humidity.png" id="umidade">
-                <div class="umidadeDiv">
-                    <p id="umidadeTxt">Umidade</p>
-                    <p id="umidadeInfo">A</p>
-                </div>
-
-            </div>
+    <div class="grid1">
+        <div class="search displayflex center">
+            <input type="text" placeholder="Pesquisar cidade">
+        </div>
+        <div class="infos displayflex center-start">
+            <img id="climaPng" src="img/clima/chuva.gif" alt="">
         </div>
     </div>
+    <!-- Corrigindo o caminho do arquivo JavaScript -->
+    <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
+    <script type="text/javascript" src="./script/refresh.js"></script>
+    <script type="text/javascript" src="./script/loading.js"></script>
+    <script type="text/javascript" src="./script/req.js"></script>
 </body>
 
 </html>

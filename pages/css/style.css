@@ -1,197 +1,58 @@
-.prev-grid {
-    position: absolute;
+.displayflex {
     display: flex;
+}
+
+.center{
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    width: 40%;
-    height: 50%;
-    margin: -1%;
-    margin-left: 5%;
-    border-radius: 2vh;
-    opacity: 0.85; /* Ajustando a opacidade para 85% */
 }
 
-.barra-pesquisa {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 4%;
-    position: relative;
-    margin-top: 6%;
-    margin-bottom: 6%;
-}
-
-.barra-pesquisa input {
-    color: white;
-    font-size: medium;
-    font-weight: 300;
-    font-style: italic;
-    width: calc(75% - 10%); /* Ajustando a largura do input */
-    height: 4vh;
-    border: 0.5vh solid black;
-    border-radius: 3vh;
-    background-color: black;
-    opacity: 0.7; /* Ajustando a opacidade para 70% */
-    padding-left: 10%;
-    margin-left: 0;
-}
-
-.barra-pesquisa input::placeholder {
-    text-align: start;
-    color: whitesmoke;
-    font-style: italic;
-}
-
-#lupa {
-    position: absolute;
-    margin-right: 68%;
-    width: 3.5vh;
-    height: 3.5vh;
-}
-
-.info,
-.infoAdd {
-    border-radius: 3.2vh;
-    flex: 1;
-}
-
-.info {
-    display: flex;
-    width: 80%;
-    height: 10%;
-    margin-bottom: 0%;
-}
-
-.infoLogoPos {
-    position: relative;
-    width: 12.5vh;
-    height: 12.5vh;
-}
-
-.infoCityWeather{
-    position: relative;
-    width: 40vh;
-    margin-top: (3% - fit-content);
-}
-
-.infoCitPos {
-    position: relative;
-    display: flex;
-    width: fit-content;
-    height: 0;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(2vh, 2vw, 6vh); /* Tamanho da fonte ajustável */
-    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo */
-    font-family: "Rubik", sans-serif;
-    color: #00003e;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.statsClima {
-    position: fixed;
-    margin-top: 0;
-    width: 100%;
-    display: flex;
+.center-start{
     align-items: center;
     justify-content: flex-start;
-    margin-left: 0.3%;
-    font-size: 3vh;
-    font-weight: 400;
-    color: rgba(43, 43, 43, 0.853);
 }
 
-.temperaturePos {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+.grid1{
+    background-color: white;
+    width: 62vh;
+    height: 50vh;
+    margin-left: 10%;
+    border-radius: 5%;
 }
 
-.fontTemp{
-    margin-top: 30%;
-    position: relative;
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    align-items: flex-start;
-    justify-content: flex-end;
-    color: #00003e;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 700;
-    font-size: clamp(2vh, 4vw, 6vh); /* Tamanho da fonte ajustável */
+.search {
+    width: 62vh;
+    height: 11vh;
 }
 
-.celsius {
-    display: flex;
-    align-items: flex-start;
-    font-weight: 700;
-    font-size: 2.5vh;
-    font-family: "Gothic A1"; 
-   
+.search input{
+    width: 42vh;
+    height: 3.5vh;
+    background-color: rgba(0, 0, 0, 0.753);
+    border: 0.1vh solid rgba(104, 9, 112, 0);
+    border-radius: 2vh;
+    padding-left: 10%;
+    color: white;
+    font-size: 1.9vh;
 }
 
-.pngTemp{
-    position: absolute;
-    right: -70%;
-    margin-top: -4%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    width: 3.5vw;
-    height: 3.5vw;
+.search input::placeholder{
+    color: white;
 }
 
-/* <p> $ahsgyasya <sub>C</sub> </> */
-.divisor {
-    border: 5px solid rgba(48, 48, 48, 0.648);
-    border-radius: 30px;
-    margin: 5%;
-    margin-bottom: 0;
-    margin-top: 0;
-    width: 75%;
+.search input:focus {
+    outline: 0.3vh solid #00003e; /* Remove o contorno padrão */
+    /* Mantém o fundo cinza */
+    /* Considere adicionar outras propriedades para realçar o foco, mantendo a acessibilidade */
 }
 
-.infoAdd {
-    display: flex;
-    align-items: center;
-    /* border: 0.5vh solid #00003e; */
-    width: 80%;
-    margin-bottom: 6%;
+.infos{
+    width: 62vh;
+    height: 12vh;
 }
 
-#umidade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10vh;
-    height: 10vh;
-    margin-left: 2%;
-}
-
-#umidadeDiv{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-
-#umidadeTxt{
-    font-size: 3.2vh;
-    display: flex;
-    color: #00003e;
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    flex-direction: column;
-}
-
-.umidadeInfo {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+#climaPng{
+    margin-left: 8%;
+    width: 12vh;
+    height: 12vh;
 }
