@@ -56,3 +56,13 @@
     width: 12vh;
     height: 12vh;
 }
+
+.infoCity{
+    font-size: 4vh;
+    font-family: "Rubik", sans-serif;
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+    align-items: center;
+    justify-content: flex-start;
+}
