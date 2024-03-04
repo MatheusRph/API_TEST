@@ -9,7 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/geral.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/jpg" href="./img/logo.png" />
+    <link rel="icon" type="image/jpg" href="./img/logo.png">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
                 <div class="nav-container">
                     <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
                     <ul>
-                        
                         <li><a href="./prev">Previsões</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -27,21 +26,51 @@
             </nav>
         </header>
     </div>
-    <div class="grid1">
-        <div class="search displayflex center">
-            <input type="text" placeholder="Pesquisar cidade">
-        </div>
-        <div class="infos displayflex center-start">
-            <img id="climaPng" src="img/clima/chuva.gif" alt="">
-            <div class="infoCity displayflex">
-                <p class="city">Maríia</p>
+
+    <div class="displayflex">
+        <div class="grid1">
+            <div class="search displayflex center">
+                <input type="text" placeholder="Pesquisar cidade">
+            </div>
+            <div class="infos displayflex">
+                <img id="climaPng" class="displayflex center-start" src="img/clima/chuva.gif" alt="">
+                <div style="width: 47%;">
+                    <p class="city displayflex">Belo Horizonte</p>
+                    <p class="weather displayflex">Céu limpo</p>
+                </div>
+                <p class="displayflex center aling-start" id="temperature">30<sub id="celcius">C</sub><img
+                        id="temperaturePng" class="displayflex center-start" src="img/temperature2.png" alt=""></p>
+            </div>
+            <div class="displayflex center">
+                <div class="borda"></div>
+            </div>
+            <div class="outrasInfos displayflex">
+                <img class="displayflex center-start" id="humidadePng" src="img/humidity.png" alt="humidity.png">
+                <div style="width: fit-content;">
+                    <p class="outrasinfosTxt displayflex">Umidade</p>
+                    <p id=umidade class="outrasInfosDados displayflex">40%</p>
+                </div>
+                <img style="margin-left: 10%;" src="img/wind.png" alt="">
+                <div style="width: fit-content; margin-left: 2%;">
+                    <p class="outrasinfosTxt displayflex">Vento</p>
+                    <p class="outrasInfosDados displayflex center">40km/h </p>
+                </div>
             </div>
         </div>
+        <div class="gridPrev displayflex center">
+            <div style="background-color: #FF5733; color: white;">A</div>
+            <div style="background-color: #33FF57; color: white;">B</div>
+            <div style="background-color: #3357FF; color: white;">C</div>
+            <div style="background-color: #F333FF; color: white;">D</div>
+            <div style="background-color: #FF33F3; color: white;">E</div>
+            <div style="background-color: #33FFF3; color: white;">F</div>
+        </div>
     </div>
+
     <!-- Corrigindo o caminho do arquivo JavaScript -->
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
     <script type="text/javascript" src="./script/refresh.js"></script>
-    <script type="text/javascript" src="./script/loading.js"></script>
+    <!-- <script type="text/javascript" src="./script/loading.js"></script> -->
     <script type="text/javascript" src="./script/req.js"></script>
 </body>
 
