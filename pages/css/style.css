@@ -185,7 +185,7 @@
     background-color: white;
     color: black;
     width: 20vh;
-    height: 21vh;
+    height: 20vh;
 }
 
 .daysIco {
@@ -195,7 +195,8 @@
 }
 
 .daysTxt{
-    font-size: 3vh;
+    padding-left: 2.6%;
+    font-size: 3.2vh;
     font-family: "Gothic A1";
     color: #00003e;
     font-weight: 600;
