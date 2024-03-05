@@ -31,6 +31,7 @@
         <div class="grid1">
             <div class="search displayflex center">
                 <input type="text" placeholder="Pesquisar cidade">
+                <img src="img/lupa.png" alt="Lupa" id="lupa" class="displayflex">
             </div>
             <div class="infos displayflex">
                 <img id="climaPng" class="displayflex center-start" src="img/clima/chuva.gif" alt="">
@@ -57,13 +58,21 @@
                 </div>
             </div>
         </div>
-        <div class="gridPrev displayflex center">
-            <div style="background-color: #FF5733; color: white;">A</div>
-            <div style="background-color: #33FF57; color: white;">B</div>
-            <div style="background-color: #3357FF; color: white;">C</div>
-            <div style="background-color: #F333FF; color: white;">D</div>
-            <div style="background-color: #FF33F3; color: white;">E</div>
-            <div style="background-color: #33FFF3; color: white;">F</div>
+        <div class="gridPrev displayflex">
+            <div class="prevFlexTamanho displayflex column">
+                <div class="displayflex" style="width: 100%;">
+                    <img src="./img/days/1.png" alt="days.png" class="daysIco displayflex center-start">
+                    <p class="daysTxt center displayflex">Segunda</p>                
+                </div>
+                <div class="displayflex center">
+                    <img src="./img/clima/chuva.gif" alt="imgClima.png" class="climaImg displayflex center">
+                </div>
+                <div class="displayflex" style="width: 100%; height: 100%; align-items: flex-end; justify-content: center;">
+                    <p class="displayflex center-start temp" style="margin: 0%; padding: 0%;">30<sub class="displayflex" style="font-size: 10px;">C</sub></p>
+                    <img src="./img/temperature2.png" alt="" style="width: 1.6vh;">
+                </div>
+            </div>
+
         </div>
     </div>
 

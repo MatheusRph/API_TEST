@@ -2,18 +2,26 @@
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .center{
     align-items: center;
     justify-content: center;
 }
 
 .center-start{
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
+.just-end{
+    justify-content: flex-end;
+}
+
 .center-end{
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -26,7 +34,7 @@
     width: 80vh;
     height: 45vh;
     margin-left: 5%;
-    border-radius: 5%;
+    border-radius: 3vh;
 }
 
 .search {
@@ -53,6 +61,14 @@
     outline: 0.5vh solid #00003e; /* Remove o contorno padrão */
     /* Mantém o fundo cinza */
     /* Considere adicionar outras propriedades para realçar o foco, mantendo a acessibilidade */
+}
+
+#lupa{
+    position: absolute;
+    margin-right: 60vh;
+    width: 3vh;
+    height: 3vh;
+    pointer-events: none; 
 }
 
 .infos{
@@ -155,8 +171,48 @@
  }
 
 .gridPrev {
-    width: 100vh;
-    height: 44vh;
-    background-color: black;
+    width: 80vh;
+    height: 48vh;
     margin-left: 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 5%;
+}
+
+.prevFlexTamanho{
+    border-radius: 1.4vh;
+    background-color: white;
+    color: black;
+    width: 20vh;
+    height: 21vh;
+}
+
+.daysIco {
+    margin: 3%;
+    width: 4.5vh;
+    height: 4.5vh;
+}
+
+.daysTxt{
+    font-size: 3vh;
+    font-family: "Gothic A1";
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+.climaImg{
+    margin-top: 0;
+    width: 10vh;
+    height: 10vh;
+}
+
+.temp{
+    font-size: 3.5vh;
+    font-family: "Gothic A1";
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
 }
