@@ -65,7 +65,7 @@ router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get'
 
     try {
         // Requisição para a API de clima
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`); // Corrigido para usar 'appid' em vez de 'serverid'
+        const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`); // Corrigido para usar 'appid' em vez de 'serverid'
         
         // Verifica se a resposta da API foi bem-sucedida
         if (response.status === 200) {
@@ -73,19 +73,10 @@ router.get('/:cidade', async (req, res) => { // Corrigido para usar 'router.get'
             const clima = traducaoClima[response.data.weather[0].description] || response.data.weather[0].description;
             
             // Dados do clima a serem enviados como resposta
-            const weatherData = {
-                alt: response.data.coord.alt,
-                lon: response.data.coord.lon,
-                lat: response.data.coord.lat,
-                Nome: response.data.name,
-                Temperatura: response.data.main.temp,
-                Umidade: response.data.main.humidity,
-                VelocidadeDoVento: response.data.wind.speed,
-                Clima: clima,
-            };
+            
 
             // Envio da resposta com os dados do clima
-            res.status(200).json(weatherData);
+            res.status(200).json(forcast);
         } else {
             // Se a resposta da API não for bem-sucedida, envia uma mensagem de erro
             res.status(response.status).send({ erro: "Erro ao obter dados" });

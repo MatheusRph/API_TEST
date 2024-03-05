@@ -24,7 +24,10 @@ server.get('/', (req, res) => {
     });
 });
 
-server.get('/prev', (req, res) => {
+server.use("/prev", require('./api/prev.js')); // Corrigido para usar '/api' como prefixo para as rotas da API
+
+
+server.get('/prev/', (req, res) => {
     res.sendFile(path.join(__dirname, '/pages/prev.html'), (err) => {
         if (err) {
             res.status(500).send("Erro ao enviar o arquivo HTML");
