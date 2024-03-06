@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    showLoading();
-    req('Marília');
+    // showLoading();
+    // req('Marília');
     days();
-    icos();
 });
