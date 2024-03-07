@@ -30,7 +30,7 @@
     <div class="displayflex">
         <div class="grid1">
             <div class="search displayflex center">
-                <input type="text" placeholder="Pesquisar cidade">
+                <input id="pesquisa" type="text" placeholder="Pesquisar cidade" onkeydown="pesquisa_cidade(event)">
                 <img src="img/lupa.png" alt="Lupa" id="lupa" class="displayflex">
             </div>
             <div class="infos displayflex">
@@ -62,7 +62,7 @@
             <div class="prevFlexTamanho displayflex column">
                 <div class="displayflex" style="width: 100%;">
                     <img src="./img/days/1.png" alt="days.png" class="daysIco displayflex center-start" id="1">
-                    <p class="daysTxt center displayflex" id="dia1">Segunda</p>
+                    <p class="daysTxt center displayflex" id="dia1"></p>
                 </div>
                 <div class="displayflex center">
                     <img src="./img/clima/chuva.gif" alt="imgClima.png" class="climaImg displayflex center">
@@ -77,7 +77,7 @@
             <div class="prevFlexTamanho displayflex column">
                 <div class="displayflex" style="width: 100%;">
                     <img src="./img/days/1.png" alt="days.png" class="daysIco displayflex center-start" id="2">
-                    <p class="daysTxt center displayflex" id="dia2">Segunda</p>
+                    <p class="daysTxt center displayflex" id="dia2"></p>
                 </div>
                 <div class="displayflex center">
                     <img src="./img/clima/chuva.gif" alt="imgClima.png" class="climaImg displayflex center">
@@ -126,8 +126,8 @@
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
     <script type="text/javascript" src="./script/refresh.js"></script>
     <script type="text/javascript" src="./script/loading.js"></script>
-    <script type="text/javascript" src="./script/req.js"></script>
     <script type="text/javascript" src="./script/days.js"></script>
+<script type="text/javascript" src="./script/prev.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
     // showLoading();
-    // req('Marília');
-    days();
+    // req('Marília')
 });

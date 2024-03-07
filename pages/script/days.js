@@ -20,7 +20,8 @@ function days() {
         const options = { weekday: 'long' };
         const diaDaSemana = newDate.toLocaleDateString('pt-BR', options);
         const diaFormatado = diaDaSemana.replace("-feira", "");
-        document.getElementById(`dia${i}`).innerHTML = (diaFormatado[0].toUpperCase() + diaFormatado.slice(1));
-        console.log(diaFormatado[0].toUpperCase() + diaFormatado.slice(1));
+        document.getElementById(`dia${i}`).textContent = diaFormatado[0].toUpperCase() + diaFormatado.slice(1);
     }
 }
+
+days();
