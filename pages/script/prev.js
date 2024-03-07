@@ -7,7 +7,7 @@ function prev(city){
         throw new Error('Erro ao buscar dados climáticos: ' + response.status);
     })
     .then(data => {
-        const mediasTemp = data.mediasTemp[1];
+        const mediasTemp = data.mediasTemp;
         // const probabilidadeClima = data.probabilidadeClima;
 
         // // Agora você pode usar essas informações como desejar
@@ -16,8 +16,8 @@ function prev(city){
 
         // // hideLoading();
 
-        for(let i = 0; i < mediasTemp.length; i++) {
-            console.log(mediasTemp[i])
+        for(let i = 0; i < 5; i++) {
+            console.log(`Média dia${i+1}: ` + data.mediasTemp[i])
         }
     })
     .catch(error => {

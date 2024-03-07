@@ -8,6 +8,3 @@ function pesquisa_cidade(event) {
         prev(city);
     }
 }
-
-// Adiciona um ouvinte de evento para capturar a tecla "Enter" pressionada no input
-document.getElementById("pesquisa").addEventListener("keypress", pesquisa_cidade);
