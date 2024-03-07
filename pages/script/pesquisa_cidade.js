@@ -1,10 +1,10 @@
 function pesquisa_cidade(event) {
     if (event.key === "Enter") {
-        // showLoading();
+        showLoading();
         const inputElement = document.getElementById("pesquisa");
         const city = inputElement.value;
         
-        // req(city);
+        req(city);
         prev(city);
     }
 }
