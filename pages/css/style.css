@@ -171,9 +171,9 @@
  }
 
 .gridPrev {
-    width: 80vh;
+    width: 60vh;
     height: 48vh;
-    margin-left: 5%;
+    margin-left: 10%;
     justify-content: space-around;
     flex-wrap: wrap;
     column-gap: 4%;
