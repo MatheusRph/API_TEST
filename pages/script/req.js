@@ -9,7 +9,7 @@ function req (city){
     .then(data => {
         document.getElementById('city').textContent = data.Nome;
         document.getElementById('C').innerHTML = 'C';
-        document.getElementById('temperature').innerHTML = parseInt(data.Temperatura);
+        document.getElementById('temperature').innerHTML = Math.round(data.Temperatura);
         document.getElementById('humidity').textContent = data.Umidade + '%';
         document.getElementById('windSpeed').textContent = data.VelocidadeDoVento + 'km/h';
         document.getElementById('weather').textContent = data.Clima;

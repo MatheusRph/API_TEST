@@ -1,7 +1,10 @@
-const express = require('express');
-const axios = require('axios');
-const cors = require('cors');
-const router = express.Router(); // Corrigido para usar 'router' em vez de 'api'
+// Importação dos módulos necessários
+const express = require('express'); // Importa o módulo 'express' para criar o servidor
+const axios = require('axios'); // Importa o módulo 'axios' para fazer requisições HTTP
+const cors = require('cors'); // Importa o módulo 'cors' para lidar com a política de mesma origem (CORS)
+
+// Inicialização do roteador do Express
+const router = express.Router(); // Cria um roteador para as rotas
 
 // Middleware para permitir solicitações de diferentes origens (CORS)
 router.use(cors());
@@ -9,20 +12,21 @@ router.use(cors());
 // Middleware para análise de solicitações JSON
 router.use(express.json());
 
-// Importando config.json diretamente como um módulo
-const config = require("./config.json"); // Corrigido o caminho para o arquivo config.json
+// Importação do arquivo de configuração
+const config = require("./config.json"); // Importa as configurações, como a chave da API, do arquivo config.json
 
 // Chave da API do arquivo de configuração
-const API_KEY = config.API_KEY;
+const API_KEY = config.API_KEY; // Armazena a chave da API obtida do arquivo de configuração
 
 // Tradução dos tipos de clima
 const traducaoClima = {
+    // Mapeamento das descrições do tempo fornecidas pela API para suas traduções em português
+    // Cada descrição original é mapeada para sua tradução correspondente
     "few clouds": "Poucas Nuvens",
     "overcast clouds": "Tempo nublado",
     "light rain": "Chuva leve",
     "moderate rain": "Chuva moderada",
     "haze": "Nevoeiro",
-    // Aqui adicionamos outras traduções com base na API
     "broken clouds": "Nuvens Quebradas",
     "scattered clouds": "Nuvens Esparsas",
     "clear sky": "Céu Limpo",
@@ -61,31 +65,71 @@ const traducaoClima = {
 
 // Rota para obter dados climáticos
 router.get('/:cidade', async (req, res) => {
-    const city = req.params.cidade;
+    const city = req.params.cidade; // Obtém o nome da cidade a partir dos parâmetros da URL
 
     try {
-        // A URL foi ajustada para usar o nome da cidade (`q`) em vez de coordenadas geográficas (`lat` e `lon`)
-        const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=pt&appid=${API_KEY}&dt_txt=24h`;
+        // Constrói a URL da API do OpenWeatherMap com base no nome da cidade e na chave da API
+        const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&dt_txt=24h&units=metric`;
+
+        // Faz uma requisição GET para a API do OpenWeatherMap para obter os dados climáticos da cidade especificada
         const response = await axios.get(url);
 
         if (response.status === 200) {
+            // Se a resposta da API for bem-sucedida (status 200), processa os dados recebidos
+            const forecastData = response.data.list.map(item => ({
+                // Mapeia os dados recebidos para um formato mais conveniente
+                Temp: item.main.temp, // Temperatura em graus Celsius
+                Clima: item.weather[0].description, // Descrição do tempo (weather description)
+            }));
 
-            res.status(200).json(response.data);
+            const mediasTemp = []; // Array para armazenar as temperaturas médias
+            const probabilidadeClima = {}; // Objeto para armazenar a probabilidade das descrições do tempo
+
+            // Loop para processar os dados por intervalos de 24 horas (8 amostras)
+            for (let i = 0; i < forecastData.length; i += 8) {
+                const subset = forecastData.slice(i, i + 8); // Obtém um subconjunto de dados para cada intervalo de 24 horas
+
+                // Cálculo da probabilidade da descrição do tempo para o subconjunto atual
+                const countByWeather = subset.reduce((acc, { Clima }) => {
+                    acc[Clima] = (acc[Clima] || 0) + 1; // Conta o número de ocorrências de cada descrição do tempo
+                    return acc;
+                }, {});
+
+                const totalSamples = subset.length; // Número total de amostras no subconjunto
+
+                // Cálculo das probabilidades de cada descrição do tempo
+                const probabilities = Object.entries(countByWeather).reduce((acc, [weather, count]) => {
+                    acc[weather] = (count / totalSamples) * 100; // Calcula a porcentagem de ocorrência de cada descrição do tempo
+                    return acc;
+                }, {});
+
+                // Encontra a descrição do tempo mais provável com base nas probabilidades calculadas
+                const mostProbableWeather = Object.keys(probabilities).reduce((a, b) => probabilities[a] > probabilities[b] ? a : b);
+                
+                // Armazena a descrição do tempo mais provável para o intervalo de 24 horas atual
+                probabilidadeClima[i] = traducaoClima[mostProbableWeather];
+
+                // Calcula a temperatura média para o intervalo de 24 horas atual
+                const totalTemperaturas = subset.reduce((acumulador, atual) => acumulador + atual.Temp, 0); // Soma todas as temperaturas
+                const media = Math.round(totalTemperaturas / subset.length); // Calcula a média das temperaturas
+                mediasTemp.push(media); // Adiciona a temperatura média ao array
+            }
+
+            // Retorna os dados processados como resposta da requisição
+            res.status(200).json({ forecastData, mediasTemp, probabilidadeClima });
         } else {
-            // Trata os casos em que a API responde com um status diferente de 200 OK
+            // Se a resposta da API não for bem-sucedida, retorna uma mensagem de erro
             res.status(response.status).json({ erro: "Erro ao obter previsão do tempo." });
         }
     } catch (error) {
+        // Se ocorrer algum erro durante o processamento da requisição, trata o erro e retorna uma mensagem adequada
         console.error("Erro na requisição de previsão do clima:", error);
-        // Diferencia erros de resposta da API de outros tipos de erros
         if (error.response) {
-            // Erros retornados pela API OpenWeatherMap
             res.status(error.response.status).json({ erro: "Erro ao obter dados do clima." });
         } else {
-            // Outros erros (rede, configuração, etc.)
             res.status(500).json({ erro: "Erro interno do servidor." });
         }
     }
 });
 
-module.exports = router; // Corrigido para exportar 'router' em vez de 'api'
+module.exports = router; // Exporta o roteador do Express para ser utilizado em outros arquivos
