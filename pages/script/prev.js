@@ -13,9 +13,17 @@ function prev(city){
         // // Agora você pode usar essas informações como desejar
         // console.log('Médias de temperatura:', mediasTemp);
         // console.log('Probabilidade de clima:', probabilidadeClima);
-
+        
         for(let i = 0; i < 5; i++) {
-            console.log(`Média dia${i+1}: ` + data.mediasTemp[i])
+            // console.log(`Média dia${i+1}: ` + data.mediasTemp[i])
+            const tempDia = document.getElementById(`tempD${i}`);
+
+            if (tempDia) {
+                tempDia.innerText = data.mediasTemp[i] 
+                document.getElementById('celcius') = "C";
+
+                
+            }
         }
 
         hideLoading();

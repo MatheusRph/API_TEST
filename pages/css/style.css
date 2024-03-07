@@ -20,6 +20,10 @@
     justify-content: flex-end;
 }
 
+.just-start{
+    justify-content: flex-start;
+}
+
 .center-end{
     align-items: flex-end;
     justify-content: flex-end;
@@ -103,7 +107,7 @@
    padding-left: 0%;
 }
 
-#temperature0 {
+#tempD0 {
     color: #00003e;
     font-size: 7vh;
     font-family: "Gothic A1", sans-serif;
@@ -171,20 +175,18 @@
  }
 
 .gridPrev {
-    width: 60vh;
-    height: 48vh;
-    margin-left: 10%;
-    justify-content: space-around;
+    width: 120vh;
+    height: 45vh;
     flex-wrap: wrap;
-    column-gap: 4%;
-    row-gap: 5%;
+    margin-left: 2%;
+    gap: 2%;
 }
 
 .prevFlexTamanho{
     border-radius: 1.4vh;
     background-color: white;
     color: black;
-    width: 24vh;
+    width: 26vh;
     height: 26vh;
 }
 
@@ -212,6 +214,35 @@
 
 .temp{
     font-size: 3.5vh;
+    font-family: "Gothic A1";
+    color: #00003e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.gridDay {
+    align-items: center;
+    background-color: white;
+    width: 84%;
+    height: 15vh;
+    margin-left: 5%;
+    margin-top: 0;
+    border-radius: 3vh;
+}
+
+body div{
+    opacity: 100%;
+}
+
+.calendarioPng{
+    width: 8vh;
+    height: 8vh;
+    margin: 8%;
+    margin-right: 2.5%;
+}
+
+.calendarioTxt {
+    font-size: 5vh;
     font-family: "Gothic A1";
     color: #00003e;
     font-weight: 600;
