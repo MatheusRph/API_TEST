@@ -1,0 +1,19 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#icon{
+    width: 50px;
+    /* margin-left: 20px; */
+}
+
+.flex1 {
+    background-color: black; 
+    width: 500px;
+    height: 80%;
+    border-radius: 20px;
+}
+
