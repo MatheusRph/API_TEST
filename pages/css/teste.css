@@ -46,13 +46,11 @@ body{
 }
 
 .pngPrincipal {
-    position: absolute;
-    width: 7%;
+    width: 20%;
 }
 
-@media (max-width: 476px) {
-    .pngPrincipal {
-        position: absolute;
+@media (max-width: 481px) {
+    .pngPrincipal{
         width: 20%;
     }
 }
