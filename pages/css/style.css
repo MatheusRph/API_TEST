@@ -177,6 +177,8 @@
 .gridPrev {
     width: 120vh;
     height: 45vh;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: 2%;
     gap: 2%;
@@ -186,7 +188,7 @@
     border-radius: 1.4vh;
     background-color: white;
     color: black;
-    width: 26vh;
+    width: 24vh;
     height: 26vh;
 }
 
@@ -222,10 +224,11 @@
 
 .gridDay {
     align-items: center;
+    justify-content: center;
     background-color: white;
-    width: 84%;
+    width: 80%;
     height: 15vh;
-    margin-left: 5%;
+    margin-left: 0;
     margin-top: 0;
     border-radius: 3vh;
 }
@@ -239,6 +242,7 @@ body div{
     height: 8vh;
     margin: 8%;
     margin-right: 2.5%;
+    margin-left: 0;
 }
 
 .calendarioTxt {
@@ -249,30 +253,97 @@ body div{
     font-style: normal;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1191px) {
     .main-container {
         margin-top: 0;
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   
     .gridPrev {
-      width: 100%; /* Ajuste a largura conforme necessário */
-      order: 2; /* Garante que .gridPrev fique abaixo se necessário */
-      margin-top: 20px; /* Ajuste conforme o espaçamento desejado */
-      align-items: center;
-      justify-content: center;
-      gap: 10%;
-    }
+        display: flex;
+        width: 100%; /* Ajuste a largura conforme necessário */
+        order: 2; /* Garante que .gridPrev fique abaixo se necessário */
+        margin-top: 20px; /* Ajuste conforme o espaçamento desejado */
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2%;
+    }   
 
     .gridDay {
-        width: 80%;
+        align-items: center;    
         margin: 0;
+        width: 90%;
     }
     
     .grid1{
         align-items: center;
         justify-content: center;
+        width: 50%;
+    }
+
+    .prevFlexTamanho{
+        width: 25vh;
+    }
+}
+
+@media (max-width: 936px) {
+    
+    .grid1 {
+        align-items: center;    
+        margin: 0;
         width: 90%;
+    }
+    
+}
+
+@media (max-width: 712px) {
+    .gridPrev {
+        gap: 4%;
+    }
+}
+
+@media (max-width: 568px) {
+    .main-container {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .gridPrev {
+        display: flex;
+        width: 100%; /* Ajuste a largura conforme necessário */
+        order: 2; /* Garante que .gridPrev fique abaixo se necessário */
+        margin-top: 20px; /* Ajuste conforme o espaçamento desejado */
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2%;
+    }   
+
+    .gridDay {
+        align-items: center;    
+        margin: 0;
+        width: 90%;
+    }
+
+    .prevFlexTamanho{
+        width: 25vh;
+    }
+    
+    .city{
+        font-size: 25px;
+    }
+
+    #tempD0{
+        font-size: 40px;
+    }
+    
+    #temperaturePng{
+        width: 20px;
+        height: 50px;
     }
 }
