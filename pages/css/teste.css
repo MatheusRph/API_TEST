@@ -10,6 +10,10 @@ body{
     /* margin-left: 20px; */
 }
 
+.container{
+    gap: 2%;
+}
+
 .flex1 {
     background-color: black; 
     border-radius: 20px;
@@ -20,10 +24,16 @@ body{
 
 .flex2 {
     background-color: black; 
-    margin: 2%;
-    margin-left: 5%;
-    width: 300px;
-    height: 100%;
     border-radius: 20px;
     color: wheat;
+    height: 500px;
+    gap: 10%;
+}
+
+.flexSep{
+    height: 50px;
+}
+
+.heightGrid{
+    height: 10%;
 }
