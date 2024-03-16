@@ -45,19 +45,13 @@ body{
 }
 
 .pngPrincipal {
-    width: 8vw;
+    width: 20%;
 }
 
 #city {
-    font-size: 2vw;
+    font-size: max(12px, 1.8vw);
 }
 
-@media (max-width: 482px) {
-    .pngPrincipal{
-        width: 24%;
-    }
-
-    #city{
-        font-size: 100%;
-    }
+#tempPrinc {
+    font-size: max(12px, 2vw);
 }
