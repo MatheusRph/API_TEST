@@ -49,9 +49,9 @@ body{
 }
 
 #city {
-    font-size: max(12px, 1.8vw);
+    font-size: max(10px, 2.1vw);
 }
 
 #tempPrinc {
-    font-size: max(12px, 2vw);
+    font-size: max(10px, 2.3vw);
 }
