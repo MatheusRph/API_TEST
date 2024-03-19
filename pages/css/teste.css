@@ -45,13 +45,20 @@ body{
 }
 
 .pngPrincipal {
-    width: 20%;
+    max-width: 20%; /* Define o tamanho máximo da imagem */
 }
 
 #city {
-    font-size: max(10px, 2.1vw);
+    font-size: 2vw; /* Define o tamanho da fonte com base na largura da tela */
+    white-space: nowrap; /* Evita que o texto quebre de linha */
+    overflow: hidden; /* Evita que o texto ultrapasse os limites do contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto se ele for muito longo */
 }
 
+
 #tempPrinc {
-    font-size: max(10px, 2.3vw);
+    font-size: 2vw; /* Define o tamanho da fonte com base na largura da tela */
+    white-space: nowrap; /* Evita que o texto quebre de linha */
+    overflow: hidden; /* Evita que o texto ultrapasse os limites do contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto se ele for muito longo */
 }

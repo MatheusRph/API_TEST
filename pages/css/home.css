@@ -256,4 +256,8 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .info{
+        width: 100%;
+    }
   }
