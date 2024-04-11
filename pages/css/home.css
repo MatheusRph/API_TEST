@@ -1,263 +1,255 @@
+/* Estilo para o contêiner principal da grade */
 .container-grid {
-    width: 80%;
-    margin-left: 5%;
-    margin-top: 2vh;
+    width: 80%; /* Largura do contêiner */
+    margin-left: 5%; /* Margem esquerda */
+    margin-top: 2vh; /* Margem superior */
 
-    display: grid;
-    grid-template-columns: 60% 30%;
-    grid-template-rows: 60% 30%;
-    gap: 4%;
+    display: grid; /* Exibe os itens como uma grade */
+    grid-template-columns: 60% 30%; /* Define as colunas da grade */
+    grid-template-rows: 60% 30%; /* Define as linhas da grade */
+    gap: 4%; /* Espaçamento entre os itens da grade */
 }
 
+/* Estilo para os itens da grade */
 .grid {
-    width: 85%;
-    height: 100%;
+    width: 85%; /* Largura dos itens */
+    height: 100%; /* Altura dos itens */
 }
 
+/* Estilo para o título */
 .title {
-    font-size: 4vh; 
-    color: #00003e;
-    font-family: "Roboto";
-    margin-top: 10%;
+    font-size: 4vh; /* Tamanho da fonte */
+    color: #00003e; /* Cor do texto */
+    font-family: "Roboto"; /* Família da fonte */
+    margin-top: 10%; /* Margem superior */
 }
 
+/* Estilo para o contêiner de informações */
 .info {
-    background-color: white;
-    width: 60vh;
-    height: 70vh;
-    display: grid;
-    margin-left: 10%;
-    margin-top: 10%;
-    grid-template-columns: 100%;
-    grid-template-rows: 23% 35% 40%;
-    border-radius: 13px;
-    
+    background-color: white; /* Cor de fundo */
+    width: 60vh; /* Largura */
+    height: 70vh; /* Altura */
+    display: grid; /* Exibe os itens como uma grade */
+    margin-left: 10%; /* Margem esquerda */
+    margin-top: 10%; /* Margem superior */
+    grid-template-columns: 100%; /* Define as colunas da grade */
+    grid-template-rows: 23% 35% 40%; /* Define as linhas da grade */
+    border-radius: 13px; /* Raio da borda */
 }
 
+/* Estilo para os itens do contêiner de informações */
 .info-grid {
-    margin-left: 10%;
+    margin-left: 10%; /* Margem esquerda */
     position: relative; /* Adiciona position: relative para o contêiner pai */
 }
 
+/* Estilo para a barra de pesquisa */
 #pesquisa {
-    padding-left: 2vh;
-    font-size: 1.2vw;
-    width: 100%;
-    height: 5vh;
-    border: 0.3vh solid white;
-    border-radius: 0.8vh;
+    padding-left: 2vh; /* Espaçamento interno à esquerda */
+    font-size: 1.2vw; /* Tamanho da fonte */
+    width: 100%; /* Largura */
+    height: 5vh; /* Altura */
+    border: 0.3vh solid white; /* Borda */
+    border-radius: 0.8vh; /* Raio da borda */
 }
 
+/* Estilo para a imagem do clima */
 #climaPng {
-    margin-top: 3vh;
-    width: 10vh;
-    height: 10vh;
-    margin-left: -5%;
+    margin-top: 3vh; /* Margem superior */
+    width: 10vh; /* Largura */
+    height: 10vh; /* Altura */
+    margin-left: -5%; /* Margem esquerda */
 }
 
-#temometro{
-    position: absolute;
-    margin-top: -18%;
-    margin-left: 83%;
-    width: 7vh;
-    height: 7vh;;
+/* Estilo para a imagem do termômetro */
+#temometro {
+    position: absolute; /* Posicionamento absoluto */
+    margin-top: -18%; /* Margem superior */
+    margin-left: 83%; /* Margem esquerda */
+    width: 7vh; /* Largura */
+    height: 7vh; /* Altura */
 }
 
+/* Estilo para a temperatura */
 #temperature {
-    position: absolute;
-    color: #00003e;
-    top: 15%;
-    right: 16%;
-    transform: translateY(-50%);
-    font-size: 6vh;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    position: absolute; /* Posicionamento absoluto */
+    color: #00003e; /* Cor do texto */
+    top: 15%; /* Posição superior */
+    right: 16%; /* Posição direita */
+    transform: translateY(-50%); /* Translação vertical */
+    font-size: 6vh; /* Tamanho da fonte */
+    font-family: "Gothic A1", sans-serif; /* Família da fonte */
+    font-weight: 700; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
 }
 
+/* Estilo para a unidade de temperatura */
 #C {
-    position: absolute;
-    top: 27%;
-    right: 13%;
-    font-size: 2.5vh;
-    font-weight: 600;
-    font-family: "Gothic A1";
+    position: absolute; /* Posicionamento absoluto */
+    top: 27%; /* Posição superior */
+    right: 13%; /* Posição direita */
+    font-size: 2.5vh; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    font-family: "Gothic A1"; /* Família da fonte */
 }
 
+/* Estilo para o nome da cidade */
 #city {
-    position: absolute;
-    top: -5%;
-    left: 16%;
-    font-size: 4vh;
-    font-family: "Rubik", sans-serif;
-    color: #00003e;
-    font-weight: 600;
-    font-style: normal;
+    position: absolute; /* Posicionamento absoluto */
+    top: -5%; /* Posição superior */
+    left: 16%; /* Posição esquerda */
+    font-size: 4vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: #00003e; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
 }
 
-
-
+/* Estilo para a descrição do clima */
 #weather {
-    position: absolute;
-    top: 33%;
-    left: 16%;
-    font-size: 3vh;
-    font-weight: 400;
-    color: rgba(43, 43, 43, 0.853);
+    position: absolute; /* Posicionamento absoluto */
+    top: 33%; /* Posição superior */
+    left: 16%; /* Posição esquerda */
+    font-size: 3vh; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    color: rgba(43, 43, 43, 0.853); /* Cor do texto */
 }
 
+/* Estilo para a descrição geral */
 #description {
-    display: flex;
-    align-items: center;
-    margin-top: 2vh;
-    font-size: 2vh;
-    border-left: 0.3vh groove black;
-    padding-left: 1.5vh;
-    height: 8vh;
-    font-size: 2.5vh;
-    margin-top: 10vh;
+    display: flex; /* Exibe como flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-top: 2vh; /* Margem superior */
+    font-size: 2vh; /* Tamanho da fonte */
+    border-left: 0.3vh groove black; /* Borda à esquerda */
+    padding-left: 1.5vh; /* Espaçamento interno à esquerda */
+    height: 8vh; /* Altura */
+    font-size: 2.5vh; /* Tamanho da fonte */
+    margin-top: 10vh; /* Margem superior */
 }
 
-#border{
-    width: 90%;
-    border-bottom: 2px solid rgba(48, 48, 48, 0.648);
+/* Estilo para a borda inferior */
+#border {
+    width: 90%; /* Largura */
+    border-bottom: 2px solid rgba(48, 48, 48, 0.648); /* Borda inferior */
 }
 
+/* Estilo para a imagem de umidade */
 #humidityPng {
-    width: 8vh;
-    height: 8vh;
-    margin-left: -3%;
+    width: 8vh; /* Largura */
+    height: 8vh; /* Altura */
+    margin-left: -3%; /* Margem esquerda */
 }
 
- #humidityTxt {
-    /* position: absolute;
-    top: -7%;
-    left: 13%; */
-    font-size: 2.5vh;
-    font-family: "Rubik", sans-serif;
-    color: #00003e;
-    font-weight: 600;
-    font-style: normal;
+/* Estilo para o texto de umidade */
+#humidityTxt {
+    font-size: 2.5vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: #00003e; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
 }
 
-/* #humidity {
-    position: absolute;
-    top: 10%;
-    left: 22%;
-    font-size: 2.9vh;
-    font-family: "Rubik", sans-serif;
-    color: rgba(63, 63, 63, 0.974);
-    font-weight: 470;
-    font-style: normal;
-} */
-
-
-#humiditygrid{
-    position: absolute;
-    /* background-color: aqua; */
-    width: 30%;
-    margin-top: -19%;
-    margin-left: 12%;
-}
-
+/* Estilo para o valor da umidade */
 #humidity {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 5%;
-    font-size: 2.3vh;
-    font-family: "Rubik", sans-serif;
-    color: rgba(63, 63, 63, 0.974);
-    font-weight: 470;
-    font-style: normal;
-    margin-top: -17%;
-} 
-
-#borderInfo2{
-    margin-top: 3%;
-    width: 90%;
-    border-bottom: 2px solid rgba(48, 48, 48, 0.648);
-    position: absolute;
+    display: flex; /* Exibe como flexível */
+    justify-content: flex-start; /* Justifica o conteúdo à esquerda */
+    padding-left: 5%; /* Espaçamento interno à esquerda */
+    font-size: 2.3vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: rgba(63, 63, 63, 0.974); /* Cor do texto */
+    font-weight: 470; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+    margin-top: -17%; /* Margem superior */
 }
 
-#windSpeedPng{
-    position: absolute;
-    width: 7.5vh;
-    height: 7.5vh;
-    margin-top: 1%;
-    margin-left: 35%;
+/* Estilo para a borda entre as informações */
+#borderInfo2 {
+    margin-top: 3%; /* Margem superior */
+    width: 90%; /* Largura */
+    border-bottom: 2px solid rgba(48, 48, 48, 0.648); /* Borda inferior */
+    position: absolute; /* Posicionamento absoluto */
 }
 
-#windSpeedGrid{
-    position: absolute;
-    width: 50%;
-    margin-top: -19%;
-    margin-left: 65%;
+/* Estilo para a imagem de velocidade do vento */
+#windSpeedPng {
+    position: absolute; /* Posicionamento absoluto */
+    width: 7.5vh; /* Largura */
+    height: 7.5vh; /* Altura */
+    margin-top: 1%; /* Margem superior */
+    margin-left: 35%; /* Margem esquerda */
 }
 
-#windSpeedTxt{
-    font-size: 2.5vh;
-    font-family: "Rubik", sans-serif;
-    color: #00003e;
-    font-weight: 600;
-    font-style: normal;
+/* Estilo para o texto de velocidade do vento */
+#windSpeedTxt {
+    font-size: 2.5vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: #00003e; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
 }
 
-#windSpeed{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 1.8%;
-    font-size: 2.3vh;
-    font-family: "Rubik", sans-serif;
-    color: rgba(63, 63, 63, 0.974);
-    font-weight: 470;
-    font-style: normal;
-    margin-top: -10%;
-}   
+/* Estilo para o valor da velocidade do vento */
+#windSpeed {
+    display: flex; /* Exibe como flexível */
+    justify-content: flex-start; /* Justifica o conteúdo à esquerda */
+    padding-left: 1.8%; /* Espaçamento interno à esquerda */
+    font-size: 2.3vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: rgba(63, 63, 63, 0.974); /* Cor do texto */
+    font-weight: 470; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+    margin-top: -10%; /* Margem superior */
+}
 
+/* Estilo para o contêiner do mapa */
 .mapGrid {
-    margin-top: -20%;
-    right: 10%;
-    width: 100%; /* Ocupa toda a largura do contêiner pai */
-    height: 100%; /* Ocupa toda a altura do contêiner pai */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -20%; /* Margem superior */
+    right: 10%; /* Posicionamento à direita */
+    width: 100%; /* Largura */
+    height: 100%; /* Altura */
+    display: flex; /* Exibe como flexível */
+    justify-content: center; /* Justifica o conteúdo no centro */
+    align-items: center; /* Alinha os itens no centro */
 }
 
+/* Estilo para o mapa */
 #map {
-    width: 80%; /* Ocupa toda a largura do contêiner pai */
-    height: 80%; /* Ocupa toda a altura do contêiner pai */
+    width: 80%; /* Largura */
+    height: 80%; /* Altura */
 }
 
-#map iframe{
-    width: 100%; /* Ocupa toda a largura do contêiner pai */
-    height: 140%; /* Ocupa toda a altura do contêiner pai */
-    border-radius: 2vh;
-    border: 0.35vh solid #00003e;
-    margin-top: -2%;
+/* Estilo para o iframe do mapa */
+#map iframe {
+    width: 100%; /* Largura */
+    height: 140%; /* Altura */
+    border-radius: 2vh; /* Raio da borda */
+    border: 0.35vh solid #00003e; /* Borda */
+    margin-top: -2%; /* Margem superior */
 }
 
-#mapTxt{
-    display: flex;
-    font-size: 3vh;
-    font-family: "Rubik", sans-serif;
-    color: #00003e;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: -6%;
-    justify-content: center;
+/* Estilo para o texto do mapa */
+#mapTxt {
+    display: flex; /* Exibe como flexível */
+    font-size: 3vh; /* Tamanho da fonte */
+    font-family: "Rubik", sans-serif; /* Família da fonte */
+    color: #00003e; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+    margin-top: -6%; /* Margem superior */
+    justify-content: center; /* Justifica o conteúdo no centro */
 }
 
-
+/* Media query para dispositivos com largura máxima de 700px */
 @media (max-width: 700px) {
-    .container-grid{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+    .container-grid {
+        display: flex; /* Exibe como flexível */
+        align-items: center; /* Alinha os itens verticalmente */
+        justify-content: center; /* Justifica o conteúdo no centro */
+        flex-wrap: wrap; /* Permite que os itens quebrem a linha conforme necessário */
     }
 
-    .info{
-        width: 100%;
+    .info {
+        width: 100%; /* Largura */
     }
-  }
+}

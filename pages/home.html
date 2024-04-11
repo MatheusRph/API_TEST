@@ -2,24 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- Definição da codificação de caracteres e configuração da visualização -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Clima</title>
+    <!-- Importação da fonte Google Rubik -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+    <!-- Importação dos arquivos de estilo CSS -->
     <link rel="stylesheet" href="./css/geral.css">
     <link rel="stylesheet" href="./css/home.css">
+    <!-- Ícone da página -->
     <link rel="icon" type="image/jpg" href="./img/logo.png" />
 </head>
 
 <body>
+    <!-- Container principal -->
     <div class="container">
+        <!-- Cabeçalho da página -->
         <header>
+            <!-- Navegação -->
             <nav>
+                <!-- Container da barra de navegação -->
                 <div class="nav-container">
+                    <!-- Logo -->
                     <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
+                    <!-- Lista de links -->
                     <ul>
-                        
+                        <!-- Links -->
                         <li><a href="./prev">Previsões</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -27,7 +38,9 @@
             </nav>
         </header>
     </div>
+    <!-- Container da grade -->
     <div class="container-grid">
+        <!-- Título e campo de pesquisa -->
         <div class="title grid">
             <h1>Clima em tempo real</h1>
             <p id="description">Clima em tempo real, ou acesse a page previões para obter dados da semana inteira</p>
@@ -35,7 +48,9 @@
                 <input type="text" id="pesquisa" placeholder="Search..." onkeydown="pesquisa_cidade_req(event)">
             </div>
         </div>
+        <!-- Informações de clima -->
         <div class="info grid">
+            <!-- Informações principais -->
             <div class="red info-grid">
                 <img id="climaPng" src="" alt="">
                 <p id="city">a</p>
@@ -47,6 +62,7 @@
                 <p id="weather"></p>
                 <div id="border"></div>
             </div>
+            <!-- Informações adicionais -->
             <div class="infoAdd info-grid">
                 <img id="humidityPng" src="./img/humidity.png">
                 <div id="humiditygrid">
@@ -60,6 +76,7 @@
                 </div>
                 <div id="borderInfo2"></div>
             </div>
+            <!-- Mapa climático -->
             <div class="mapGrid info-grid">
                 <div id="map">
                     <p id="mapTxt">Mapa Climático</p>
@@ -73,7 +90,7 @@
             </div>
         </div>
     </div>
-    <!-- Corrigindo o caminho do arquivo JavaScript -->
+    <!-- Scripts JavaScript -->
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
     <script type="text/javascript" src="./script/refresh.js"></script>
     <script type="text/javascript" src="./script/loading.js"></script>

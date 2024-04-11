@@ -3,10 +3,10 @@ function showLoading(){
     const div = document.createElement('div');
     div.classList.add("loading", "centralize");
 
-    const img = document.createElement("img"); // Corrigido: use 'img' em vez de 'label'
-    img.src = "img/loading.gif"; // Corrigido: atribui 'src' à variável 'img'
+    const img = document.createElement("img");
+    img.src = "img/loading.gif"; 
 
-    div.appendChild(img); // Corrigido: adiciona a imagem ao div
+    div.appendChild(img); 
 
     document.body.appendChild(div);
 }

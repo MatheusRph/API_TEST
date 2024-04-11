@@ -2,22 +2,34 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Definição da codificação de caracteres e configuração da visualização -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Clima</title>
+    <!-- Importação da fonte Google Rubik -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Importação dos arquivos de estilo CSS -->
     <link rel="stylesheet" href="./css/geral.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Ícone da página -->
     <link rel="icon" type="image/jpg" href="./img/logo.png">
 </head>
 
 <body>
+    <!-- Container principal -->
     <div class="container">
+        <!-- Cabeçalho da página -->
         <header>
+            <!-- Navegação -->
             <nav>
+                <!-- Container da barra de navegação -->
                 <div class="nav-container">
+                    <!-- Logo -->
                     <a href="https://api-ulas.onrender.com/"><img src="img/logo.png" id="logo" alt="logo"></a>
+                    <!-- Lista de links -->
                     <ul>
+                        <!-- Links -->
                         <li><a href="./prev">Previsões</a></li>
                         <li><a href="#">Sla</a></li>
                     </ul>
@@ -26,12 +38,16 @@
         </header>
     </div>
 
+    <!-- Container da grade -->
     <div class="displayflex main-container">
+        <!-- Grade 1 -->
         <div class="grid1">
+            <!-- Barra de pesquisa -->
             <div class="search displayflex center">
                 <input id="pesquisa" type="text" placeholder="Pesquisar cidade" onkeydown="pesquisa_cidade_prev(event)">
                 <img src="img/lupa.png" alt="Lupa" id="lupa" class="displayflex">
             </div>
+            <!-- Informações principais -->
             <div class="infos displayflex">
                 <img id="clima0" class="displayflex center-start" src="./img/clima/chuva.gif" alt="">
                 <div style="width: 47%;">
@@ -40,9 +56,11 @@
                 </div>
                 <p class="displayflex center aling-start" id="tempD0">30<sub id="celcius">C</sub><img id="temperaturePng" class="displayflex center-start" src="img/temperature2.png" alt=""></p>
             </div>
+            <!-- Barra de separação -->
             <div class="displayflex center">
                 <div class="borda"></div>
             </div>
+            <!-- Informações adicionais -->
             <div class="outrasInfos displayflex">
                 <img class="displayflex center-start" id="humidadePng" src="img/humidity.png" alt="humidity.png">
                 <div style="width: fit-content;">
@@ -56,13 +74,16 @@
                 </div>
             </div>
         </div>
+        <!-- Previsão -->
         <div class="gridPrev displayflex">
+            <!-- Dia 0 -->
             <div class="displayflex gridDay">
                 <img src="./img/days/1.png" class="calendarioPng" alt="" id="dayIcon0">
                 <h1 class="displayflex center-start calendarioTxt" id="dia0">Segunda-Feira de</h1>
             </div>
-            <!-- Dia 1 -->
+            <!-- Dias 1 a 4 -->
             <div class="prevFlexTamanho displayflex column">
+                <!-- Dia 1 -->
                 <div class="displayflex" style="width: 100%;">
                     <img src="./img/days/1.png" alt="days.png" class="daysIco displayflex center-start" id="dayIcon1">
                     <p class="daysTxt center displayflex" id="dia1"></p>
@@ -120,7 +141,7 @@
         </div>
     </div>
 
-    <!-- Corrigindo o caminho do arquivo JavaScript -->
+    <!-- Scripts JavaScript -->
     <script type="text/javascript" src="./script/pesquisa_cidade.js"></script>
     <script type="text/javascript" src="./script/loading.js"></script>
     <script type="text/javascript" src="./script/days.js"></script>

@@ -1,39 +1,48 @@
+/* Define um display flex para o elemento com a classe displayflex */
 .displayflex {
     display: flex;
 }
 
-.column{
+/* Define a direção dos elementos filhos como coluna */
+.column {
     flex-direction: column;
 }
 
-.center{
+/* Centraliza os itens ao longo do eixo transversal */
+.center {
     align-items: center;
     justify-content: center;
 }
 
-.center-start{
+/* Alinha os itens no início ao longo do eixo transversal */
+.center-start {
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.just-end{
+/* Alinha os itens no final ao longo do eixo principal */
+.just-end {
     justify-content: flex-end;
 }
 
-.just-start{
+/* Alinha os itens no início ao longo do eixo principal */
+.just-start {
     justify-content: flex-start;
 }
 
-.center-end{
+/* Centraliza os itens ao longo do eixo transversal e no final ao longo do eixo principal */
+.center-end {
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-.aling-start{
+/* Alinha os itens no início ao longo do eixo transversal */
+.aling-start {
     align-items: start;
 }
 
-.grid1{
+/* Estilo para o contêiner principal */
+.grid1 {
     background-color: white;
     width: 80vh;
     height: 45vh;
@@ -41,12 +50,14 @@
     border-radius: 3vh;
 }
 
+/* Estilo para a barra de pesquisa */
 .search {
     width: 100%;
     height: 13vh;
 }
 
-.search input{
+/* Estilo para o campo de entrada na barra de pesquisa */
+.search input {
     width: 60vh;
     height: 5vh;
     background-color: rgba(0, 0, 0, 0.753);
@@ -57,36 +68,40 @@
     font-size: 2.3vh;
 }
 
-.search input::placeholder{
+/* Estilo para o texto de espaço reservado na barra de pesquisa */
+.search input::placeholder {
     color: white;
 }
 
+/* Estilo para o campo de entrada na barra de pesquisa quando está em foco */
 .search input:focus {
     outline: 0.5vh solid #00003e; /* Remove o contorno padrão */
-    /* Mantém o fundo cinza */
-    /* Considere adicionar outras propriedades para realçar o foco, mantendo a acessibilidade */
 }
 
-#lupa{
+/* Estilo para o ícone de pesquisa */
+#lupa {
     position: absolute;
     margin-right: 60vh;
     width: 3vh;
     height: 3vh;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
-.infos{
+/* Estilo para o contêiner de informações */
+.infos {
     width: 100%;
     height: 15vh;
 }
 
-#clima0{
+/* Estilo para o ícone de clima */
+#clima0 {
     margin-left: 8%;
     width: 13vh;
     height: 13vh;
 }
 
-.city{
+/* Estilo para o nome da cidade */
+.city {
     font-size: 4.5vh;
     font-family: "Rubik", sans-serif;
     color: #00003e;
@@ -97,16 +112,18 @@
     padding: 0;
 }
 
-.weather{
-   align-items: end;
-   margin: 0;
-   padding: 0;
-   font-size: 3.5vh;
-   font-weight: 400;
-   color: rgba(43, 43, 43, 0.853);
-   padding-left: 0%;
+/* Estilo para a descrição do clima */
+.weather {
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5vh;
+    font-weight: 400;
+    color: rgba(43, 43, 43, 0.853);
+    padding-left: 0%;
 }
 
+/* Estilo para a temperatura atual */
 #tempD0 {
     color: #00003e;
     font-size: 7vh;
@@ -117,13 +134,15 @@
     margin-top: 3%;
 }
 
-#celcius{
+/* Estilo para a unidade de temperatura */
+#celcius {
     font-size: 4vh;
     font-weight: 600;
     font-family: "Gothic A1";
 }
 
-#temperaturePng{
+/* Estilo para o contêiner do ícone de temperatura */
+#temperaturePng {
     display: flex;
     width: 1;
     height: 10vh;
@@ -132,26 +151,29 @@
     margin-top: -5%;
 }
 
-.borda{
+/* Estilo para a borda */
+.borda {
     width: 85%;
     border-bottom: 0.5vh solid rgba(48, 48, 48, 0.648);
     margin: 0 auto;
 }
 
-.outrasInfos{
+/* Estilo para o contêiner de outras informações */
+.outrasInfos {
     margin-top: 2%;
     width: 100%;
     height: 10vh;
-    /* margin-left: 5%; */
 }
 
-#humidadePng{
+/* Estilo para o ícone de umidade */
+#humidadePng {
     margin-left: 8%;
     width: 10vh;
     height: 10vh;
 }
 
-.outrasinfosTxt{
+/* Estilo para o texto de outras informações */
+.outrasinfosTxt {
     font-size: 3.5vh;
     font-family: "Rubik", sans-serif;
     color: #00003e;
@@ -162,7 +184,8 @@
     padding: 0;
 }
 
-.outrasInfosDados{
+/* Estilo para os dados de outras informações */
+.outrasInfosDados {
     align-items: end;
     margin: 0;
     padding: 0;
@@ -172,8 +195,9 @@
     font-weight: 470;
     font-style: normal;
     padding-left: 2.5%;
- }
+}
 
+/* Estilo para o contêiner da previsão do tempo */
 .gridPrev {
     width: 120vh;
     height: 45vh;
@@ -184,7 +208,8 @@
     gap: 2%;
 }
 
-.prevFlexTamanho{
+/* Estilo para os contêineres de previsão do tempo */
+.prevFlexTamanho {
     border-radius: 1.4vh;
     background-color: white;
     color: black;
@@ -192,13 +217,15 @@
     height: 26vh;
 }
 
+/* Estilo para os ícones dos dias */
 .daysIco {
     margin: 7%;
     width: 4.5vh;
     height: 4.5vh;
 }
 
-.daysTxt{
+/* Estilo para os textos dos dias */
+.daysTxt {
     padding-left: 2.6%;
     font-size: 3.2vh;
     font-family: "Gothic A1";
@@ -208,13 +235,15 @@
     margin: 0;
 }
 
-.climaImg{
+/* Estilo para as imagens de clima */
+.climaImg {
     margin-top: 0;
     width: 10vh;
     height: 10vh;
 }
 
-.temp{
+/* Estilo para as temperaturas */
+.temp {
     font-size: 3.5vh;
     font-family: "Gothic A1";
     color: #00003e;
@@ -222,6 +251,7 @@
     font-style: normal;
 }
 
+/* Estilo para o contêiner dos dias */
 .gridDay {
     align-items: center;
     justify-content: center;
@@ -233,11 +263,13 @@
     border-radius: 3vh;
 }
 
-body div{
+/* Define a opacidade para todos os elementos div dentro do corpo */
+body div {
     opacity: 100%;
 }
 
-.calendarioPng{
+/* Estilo para o ícone de calendário */
+.calendarioPng {
     width: 8vh;
     height: 8vh;
     margin: 8%;
@@ -245,6 +277,7 @@ body div{
     margin-left: 0;
 }
 
+/* Estilo para o texto do calendário */
 .calendarioTxt {
     font-size: 5vh;
     font-family: "Gothic A1";
@@ -253,6 +286,9 @@ body div{
     font-style: normal;
 }
 
+/* Estilos para diferentes tamanhos de tela */
+
+/* Para telas menores que 1191px */
 @media (max-width: 1191px) {
     .main-container {
         margin-top: 0;
@@ -260,51 +296,52 @@ body div{
         flex-direction: column;
         align-items: center;
     }
-  
+
     .gridPrev {
         display: flex;
-        width: 100%; /* Ajuste a largura conforme necessário */
-        order: 2; /* Garante que .gridPrev fique abaixo se necessário */
-        margin-top: 20px; /* Ajuste conforme o espaçamento desejado */
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 2%;
-    }   
+    }
 
     .gridDay {
-        align-items: center;    
+        align-items: center;
         margin: 0;
         width: 90%;
     }
-    
-    .grid1{
+
+    .grid1 {
         align-items: center;
         justify-content: center;
         width: 50%;
     }
 
-    .prevFlexTamanho{
+    .prevFlexTamanho {
         width: 25vh;
     }
 }
 
+/* Para telas menores que 936px */
 @media (max-width: 936px) {
-    
     .grid1 {
-        align-items: center;    
+        align-items: center;
         margin: 0;
         width: 90%;
     }
-    
 }
 
+/* Para telas menores que 712px */
 @media (max-width: 712px) {
     .gridPrev {
         gap: 4%;
     }
 }
 
+/* Para telas menores que 568px */
 @media (max-width: 568px) {
     .main-container {
         margin-top: 0;
@@ -312,37 +349,37 @@ body div{
         flex-direction: column;
         align-items: center;
     }
-  
+
     .gridPrev {
         display: flex;
-        width: 100%; /* Ajuste a largura conforme necessário */
-        order: 2; /* Garante que .gridPrev fique abaixo se necessário */
-        margin-top: 20px; /* Ajuste conforme o espaçamento desejado */
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 2%;
-    }   
+    }
 
     .gridDay {
-        align-items: center;    
+        align-items: center;
         margin: 0;
         width: 90%;
     }
 
-    .prevFlexTamanho{
+    .prevFlexTamanho {
         width: 25vh;
     }
-    
-    .city{
+
+    .city {
         font-size: 25px;
     }
 
-    #tempD0{
+    #tempD0 {
         font-size: 40px;
     }
-    
-    #temperaturePng{
+
+    #temperaturePng {
         width: 20px;
         height: 50px;
     }
