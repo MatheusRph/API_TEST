@@ -16,17 +16,12 @@ Uma máquina que possua internet e consiga navegar em sites.
 Qualquer aparelho eletronico com os outros pré-requisitos.
 ```
 
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [Html] - Utilizado para construir a página WEB.
+* [CSS] - Linguagem utilizada para Front-End
+* [JavaScript](https://www.javascript.com/) - Linguagem utilizada para o Back-End
+* [BootsTrap](https://getbootstrap.com/) - Framework para auxiliar no css
 
 ## 🖇️ Colaborando
 
@@ -34,7 +29,7 @@ Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoS
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Versão beta 1.0
 
 ## ✒️ Autores
 
