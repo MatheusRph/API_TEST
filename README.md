@@ -39,10 +39,8 @@ Você também pode ver a lista de todos os [colaboradores](https://github.com/us
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
+* Obrigados a todos que me ajudaram durante o processo 📢;
+* Vlw IRMÕES 🫂;
 
 
 ---
