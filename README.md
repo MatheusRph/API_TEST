@@ -23,10 +23,6 @@ Qualquer aparelho eletronico com os outros pré-requisitos.
 * [JavaScript](https://www.javascript.com/) - Linguagem utilizada para o Back-End
 * [BootsTrap](https://getbootstrap.com/) - Framework para auxiliar no css
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
 ## 📌 Versão
 
 Versão beta 1.0
